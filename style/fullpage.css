@@ -1,22 +1,29 @@
+
 #section1{
     background :url(/asset/img/page1-1.jpg);
-    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+
 }
 #section2{
     background:url(/asset/img/page1-2.jpg);
-    height: 100vh;}
-
+    background-position: center center;
+    background-size: cover;
+}
 #section3{
     background:url(/asset/img/page1-3.jpg);
-    height: 100vh;
+    background-position: center center;
+    background-size: cover;
 }
 #section4{
     background:url(/asset/img/page1-4.jpg);
-    height: 100vh;
+    background-position: center center;
+    background-size: cover;
 }
 #section5{
     background:url(/asset/img/page1-5.jpg);
-     height: 100vh;
+    background-position: center center;
+    background-size: cover;
 }
 
 
