@@ -1,0 +1,107 @@
+::-webkit-scrollbar {
+    display: none;}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bree Serif',Arial;
+    background-color: transparent;
+}
+.header{
+    position: relative;
+    z-index: 20;
+    top: 68px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+ 
+}
+
+.header-content{
+    padding-left: 30px;
+    min-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo .cls-1{
+    transform: translate(0,-2px); 
+    fill: white;
+}    
+
+.header-navbar-area{
+    margin-right: 150px;
+    font-size: 17px;
+    align-self: center;
+    display: flex;
+    /* background-color: black; */
+}
+.tag-nav{
+    font-size: 16.6px;
+    color: rgb(255, 255, 255);
+    transform: translate(-9.5px , 1px);
+    margin:0 15px;
+
+}
+
+.icon-area-header{
+    white-space: nowrap;
+    position: relative;
+    align-self: center;
+    right:0px;
+    margin-right: 85px;
+    transform: translateY(7px);
+
+}
+
+
+.icon-area-header {
+    transform: translate(-200px,6px);
+    position: relative;
+    stroke: white;
+    stroke-width: 1px;
+    fill: transparent;
+    height: 30px;
+    width: 34px;
+    right: -49px;
+    top:0px
+}
+
+.icon-area-header svg{
+    margin-left: 41%;
+}
+
+.icon-area-header .fb-style-1{
+    fill:white;
+    stroke-width: 0;
+}
+
+.icon-area-header .reservation-2{
+    stroke-width: 0px;
+    fill: white;    
+}
+
+
+.incart-number{
+    position: relative;
+    top:-39px;
+    left: 223px;
+    font-size: 14px;
+    height:17px;
+    width: 17px;
+    background-color: white;
+    border-radius: 20px;
+}
+.incart-number-text{
+    position: absolute;
+    top: -3px;
+    left:4.5px;
+}
+
+
+
+/* content below */
+
