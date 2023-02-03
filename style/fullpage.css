@@ -1,8 +1,10 @@
 
 #section1{
     background :url(/asset/img/page1-1.jpg);
-    background-position: center center;
-    background-size: cover;
+    background-position :center center;
+    background-size:cover;
+
+
 
 }
 #section2{
