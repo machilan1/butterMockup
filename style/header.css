@@ -40,9 +40,14 @@
 }
 
 .header-logo .cls-1{
+    transition: .5s;
     transform: translate(4px,-12px); 
     fill: white;
 }    
+
+.dark-header .header-logo .cls-1{
+    fill: black;
+}
 
 .header-bars-icon{
     position: absolute; 
@@ -81,10 +86,8 @@
     flex-direction: column;
     align-items: center;
     transition: .4s;
-
-
-
 }
+
 
 .navbar:hover{
     cursor: pointer;
@@ -92,6 +95,9 @@
 .navbar:hover .navbar-chinese{
     transform: translateY(-18px);
     color: white;
+}
+.dark-header .navbar:hover .navbar-chinese{
+    color: black;
 }
 .navbar:hover .navbar-english{
     transform: translateY(-10px);
@@ -101,9 +107,13 @@
     font-size: 15px;
     color: white;
     margin:0 14.5px;
-    transition: .4s;
+    transition: .5s;
 
 }
+.dark-header .navbar-english{
+    color: black;
+}
+
 .navbar-chinese{
 
     white-space: nowrap;
@@ -132,7 +142,9 @@
     right: -62px;
     top:-11.4px
 }
-
+.dark-header .icon-area-header{
+    stroke: black;
+}
 .icon-area-header :nth-child(1n):hover {
     z-index: 20;
     cursor: pointer;
@@ -140,21 +152,37 @@
 }
 .icon-area-header svg{
     margin-left: 7.6px;
+    transition: .5s;
 
 }
 
 .icon-facebook-logo{
     fill:white;
     stroke-width: 0;
+    transition: .5s;
+}
+.dark-header .icon-facebook-logo{
+    fill:black;
+    stroke-width: 0;
 }
 
 .icon-line-logo{
     stroke-width: 0px;
     fill: white;    
+    transition: .5s;
+}
+.dark-header .icon-line-logo{
+    stroke-width: 0px;
+    fill: black;    
 }
 .icon-ask-logo{
     stroke-width: 0px;
     fill: white;   
+    transition: .5s;
+}
+.dark-header .icon-ask-logo{
+    stroke-width: 0px;
+    fill: black;   
 }
 
 
@@ -167,11 +195,21 @@
     width: 16px;
     background-color: white;
     border-radius: 20px;
+    transition: .5s;
+}
+.dark-header .incart-number{
+ background-color: black;
 }
 .incart-number-text{
+    z-index: 100;
     position: absolute;
     top: -3px;
     left:4.5px;
+    transition: .5s;
+}
+  
+.dark-header .incart-number-text{
+    color: white;
 }
   
 .move-icon-to-left{
@@ -185,9 +223,12 @@
 
 .current .navbar-english{
     font-size: 15px;
-    color: white;
+    color: transparent;
     margin:0 14.5px;
     transition: .4s;
+}
+.dark-header .current .navbar-english{
+    color: black;
 }
 
 .current .navbar-chinese{
@@ -201,13 +242,26 @@
 .current:hover .navbar-chinese{
     border-bottom: solid 1px white;
 }
-
+.dark-header .current:hover .navbar-chinese{
+    border-bottom: solid 1px black;
+}
 .navbar-chinese-stay{
     border-bottom: solid 1px white;
     transform: translateY(-18px);
     color: white;
 }
-
+.dark-header .navbar-chinese-stay{
+    border-bottom: solid 1px black;
+    color: black;
+}
 .navbar-english-out{
+    transform: translateY(-20px);
     color: transparent;
 }
+
+.dark-header .navbar-english-out{
+    color: transparent;
+}
+
+
+

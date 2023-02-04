@@ -10,11 +10,13 @@
 		<link rel="stylesheet" href="/style/header.css">
 		<link rel="stylesheet" href="/style/cart.css">
 		<link rel="stylesheet" href="/style/sidebar.css">
+		<link rel="stylesheet" href="/style/footer.css">
         <title>Butter mockup</title>
 		<script type="text/javascript" src="/node_modules/fullpage.js/dist/fullpage.js"></script>
            
     </head>
     <body>
+		<div class="blinder"></div>
         <div class="header">
 			<div class="header-content">
 				<div class="header-logo">
@@ -210,31 +212,8 @@
 					<a href="" class="section-button-shadow">彌月禮盒</a>
 				</div>
 			</div>
+
 		</div>
-
-		<div class="footer">
-            <div class="footer-info">
-                <div class="text text-footer">│ but. (we love butter) │ 富錦奶油商號有限公司 │ 統一編號 52616013 │</div>
-                <div class="text text-footer">│ 台北市松山區富錦街102號 │ 02-25471207 │ service@but.com.tw │</div>
-                <div class="text text-footer">│ open_Mon.-Fri. 13:00-20:30 / Sat.-Sun. 12:30-20:00 │</div>
-            </div>
-
-            <div class="icon-area icon-area-footer">
-                <button class="icon icon-footer"></button>
-                <button class="icon icon-footer"></button>
-                <button class="icon icon-footer"></button>
-                <button class="icon icon-footer"></button>
-                <svg xmlns="http://www.w3.org/2000/svg" width="27.78" height="27.78" viewBox="0 0 27.78 27.78">
-				    <circle class="bag-circle" cx="13.89" cy="13.89" r="13.35"></circle>
-				    <rect class="bag-1" x="8.72" y="10.38" width="10.33" height="10.17"></rect>
-				    <path class="bag-2" d="M10.83,10.3a3.06,3.06,0,0,1,6.12,0"></path>
-				    <line class="bag-3" x1="10.89" y1="10.12" x2="10.89" y2="13.12"></line>
-				    <line class="bag-3" x1="16.89" y1="10.12" x2="16	.89" y2="13.12"></line>
-				</svg>
-
-            </div>
-
-        </div>
 		<div class="cart-background">
 			<div class="cart-area">
 				<div class="cart-content">
@@ -344,27 +323,45 @@
 				<div class="black-stroke"></div>
 				<div class="black-stroke"></div>
 			</div>
+		</div>
 
+		
 		<script src="/script/main.js"></script>
 
 		<script type="text/javascript" >
 			new fullpage('#fullpage', {
-				anchors:['banner1','banner2','banner3','banner4','banner5'],
+				anchors:['banner1','banner2','banner3','banner4','banner5','ddddds'],
 				scrollingSpeed:1000,
 				onLeave:function(origin, destination, direction){
-
+					document.querySelector('#fullpage').children[destination.index].children[0].children[0].classList.remove('section-title-activated');
+					document.querySelector('#fullpage').children[destination.index].children[0].children[1].classList.remove('section-button-activated');
+	
+					console.log('fadeout');
 					for(let i=0;i<header.children[0].children[1].children.length;i++){
 						
 						if(i==destination.index){
-							console.log('a');
 							header.children[0].children[1].children[i].children[0].classList.add('navbar-english-out');
 							header.children[0].children[1].children[i].children[1].classList.add('navbar-chinese-stay');
 						}else{
-							console.log('b');
 							header.children[0].children[1].children[i].children[0].classList.remove('navbar-english-out');
 							header.children[0].children[1].children[i].children[1].classList.remove('navbar-chinese-stay');
 						}
 					}
+
+					//change logo color
+					
+					if(document.querySelector('#fullpage').children[destination.index].classList.contains('dark-section'))
+					{
+						header.classList.add('dark-header');
+					}else{
+						header.classList.remove('dark-header');
+					}
+				},
+				afterLoad:function(origin, destination, direction){
+
+					document.querySelector('#fullpage').children[destination.index].children[0].children[0].classList.add('section-title-activated');
+					document.querySelector('#fullpage').children[destination.index].children[0].children[1].classList.add('section-button-activated');
+	
 				}
 				
 
