@@ -1,5 +1,6 @@
 ::-webkit-scrollbar {
     display: none;}
+    
 body{
     margin: 0;
     padding: 0;
@@ -15,183 +16,12 @@ a:visited {
 a:hover{
     text-decoration: none;
 }
-
-
-.header{
-    display: flex;
-    position: relative;
-    z-index: 20;
-    top: 68px;
-    position: fixed;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100px;
- 
+a:active{
+    color: transparent;
 }
-
-.header-content{
-    padding-left: 27.27px;
-    min-width: 1000px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-logo .cls-1{
-    transform: translate(4px,-12px); 
-    fill: white;
-}    
-
-.header-navbar-area{
-    margin-bottom: 20px;
-    margin-right: 160px;
-    font-size: 15px;
-    align-self: center;
-    display: flex;
-    /* background-color: black; */
-}
-.navbar{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: translate(-9.5px , 1px);
-}
-.navbar-english{
-    font-size: 15px;
-    color: white;
-
-    margin:0 14.5px;
-}
-.navbar-chinese{
-    top:18px;
-    white-space: nowrap;
-    position: absolute;
-    font-size: 15px;
-    color: white;
-    margin:0 14.5px;
-}
-
-.tag-nav:hover{
-    cursor: pointer;
-}
-
-
-.icon-area-header {
-    align-self: center;
-    white-space: nowrap;
-    transform: translate(-200px,6px);
-    position: relative;
-    stroke: white;
-    stroke-width: 1px;
-    fill: transparent;
-    margin-right: 68px;
-    height: 30px;
-    width: 34px;
-    right: -62px;
-    top:-11.4px
-}
-
-.icon-area-header :nth-child(){
-  stroke: aqua;
-  fill: white;
-}
-
-.icon-area-header svg{
-    margin-left: 7.6px;
-
-}
-
-.icon-facebook-logo{
-    fill:white;
-    stroke-width: 0;
-}
-
-.icon-line-logo{
-    stroke-width: 0px;
-    fill: white;    
-}
-.icon-ask-logo{
-    stroke-width: 0px;
-    fill: white;   
-}
-
-
-.incart-number{
-    position: relative;
-    top:-40px;
-    left: 196px;
-    font-size: 14px;
-    height:16px;
-    width: 16px;
-    background-color: white;
-    border-radius: 20px;
-}
-.incart-number-text{
-    position: absolute;
-    top: -3px;
-    left:4.5px;
-}
-
 
 
 /* content below */
-.section{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-}
-.section-title{
-    font-size: 49px;
-    background-color: transparent;
-    position: absolute;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    bottom: 15%;
-    width: 800px;
-    height: 60px;
-    letter-spacing: 4.5px;
-
-}
-
-
-.section-button-area{
-    position: absolute;
-    overflow: hidden;
-    width: 144px;
-    height: 42px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    bottom: 8%;
-    border: solid 1px white;
-}
-
-
-.section-button{
-    position: absolute;
-    background-color: transparent;
-    color: white;
-    letter-spacing: .8px;
-    left:50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-
-}
-.section-button-shadow{
-    position: absolute;
-    background-color: transparent;
-    color: white;
-    letter-spacing: .8px;
-    left:50%;
-    top: 50%;
-    transform: translate(-50%,8px);
-}
 
 
 

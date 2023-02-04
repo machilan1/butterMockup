@@ -1,0 +1,9 @@
+@keyframes wordup{
+    from{}
+    to{transform: translateY(-20px);}
+}
+
+.wordup{
+    animation-name: wordup;
+    animation-duration: .5s;
+}

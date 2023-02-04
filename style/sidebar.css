@@ -1,0 +1,116 @@
+.sidebar{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left:-100vw;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    transition: 1s;
+
+}
+
+.sidebar-activated{
+    z-index: 500;
+    transform: translateX(100vw);
+}
+
+.sidebar-logo-area{
+    width: fit-content;
+    transform: translate(20px,50px);
+}
+
+.sidebar-logo-area:hover{
+    cursor: pointer;
+}
+
+
+.sidebar-nav-area{
+    transform: translate(20px,73px);
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.sidebar-nav-area a{
+    padding-bottom: 15px;
+    color: black;
+}
+
+
+
+.icon-area-sidebar .big-circle{
+    fill: transparent;
+    stroke: black;
+}
+
+.icon-area-sidebar{
+    transform: translate(16px,71px);
+}
+
+.icon-area-sidebar svg{
+    transform: scale(.78);
+}
+
+.icon-area-sidebar :nth-child(1n):hover {
+    cursor: pointer;
+}
+
+.icon-area-sidebar :nth-child(){
+fill: white;
+}
+
+
+.icon-area-sidebar .icon-facebook-logo{
+    fill:black;
+    stroke-width: 0;
+}
+
+
+.icon-area-sidebar .ig-middle{
+    fill: white;
+    stroke: black;
+}
+.icon-area-sidebar .ig-small{
+    fill: white;
+    stroke: black;
+}
+
+.icon-area-sidebar .icon-line-logo{
+    stroke-width: 0px;
+    fill: black;    
+}
+.icon-area-sidebar .icon-ask-logo{
+    stroke-width: 0px;
+    fill: black;   
+}
+
+.icon-area-sidebar .bag-icon :nth-child(n){
+    fill: transparent;
+    stroke: black;
+}
+
+.close-button-sidebar{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    align-self: flex-end;
+    transform: translate(-16px,-183px);
+}
+.close-button-sidebar:hover{
+    cursor: pointer;
+}
+.close-button-sidebar :nth-child(1n){
+    position: absolute;
+    height: 1px;
+    width: 15px;
+    background-color: rgb(114, 110, 110);
+    transform:rotate(45deg) ;
+    left:20%;
+    top:50%;
+    transition: .5s;
+}
+.close-button-sidebar :nth-child(2){
+    transform:rotate(135deg) ;
+}
