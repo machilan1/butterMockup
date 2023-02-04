@@ -1,0 +1,9 @@
+#section6{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-family: "Roboto",Arial;
+    height: 181px;
+    width: 100vw;
+    background-color: white;
+}

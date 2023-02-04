@@ -107,10 +107,24 @@ sidebar.children[3].addEventListener('click',function(){
     sidebar.classList.remove('sidebar-activated');
 })
 
-// set navbar tag behavior      
+// set navbar tag behavior          
 ////go to section when clicked
 for(let i=0;i<header.children[0].children[1].children.length;i++){
     header.children[0].children[1].children[i].addEventListener('click',function(){
         fullpage_api.moveTo(`banner${i+1}`,0);
     })
+}
+
+//initialization
+
+////blinder
+setTimeout(function(){
+    document.querySelector('.blinder').classList.add('blinder-done')
+},200)
+
+////assign dark pages/styles
+for(let i =0;i<document.querySelector('#fullpage').children.length;i++){
+    if(i ===2 ||i===4){
+        document.querySelector('#fullpage').children[i].classList.add('dark-section')
+    }
 }

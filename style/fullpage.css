@@ -42,14 +42,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    bottom: 15%;
+    bottom: 0%;
     width: fit-content;
     height: 60px;
     letter-spacing: 4.5px;
+    transition: 1.5s;
+    opacity: 0;
 
 
 }
-
+.section-title-activated{
+    z-index: 200;
+    bottom:15%;
+    opacity: 1;
+}
 
 .section-button{
     display: flex;
@@ -62,10 +68,20 @@
     height: 40px;
     margin-left: 50%;
     transform: translateX(-50%);
-    bottom: 8%;
+    bottom: 0%;
     border: solid 1px white;
-    transition: .4s;
+    transition-property: background-color ,bottom;
+    transition-duration: .4s ,1.5s;
+
+    opacity: 0;
 }
+
+.section-button-activated{
+    bottom:8%;
+    opacity: 1;
+    z-index: 2000;
+}
+
 .section-button-small{
     height: 28px;
     width: 98px;
@@ -86,6 +102,8 @@
 
 .section-button:hover {
     cursor: pointer;
+    background-color: white;
+    
 }
 .section-button:hover .section-button-label{
     transform: translateY(-20px);
@@ -93,5 +111,90 @@
 }
 .section-button:hover .section-button-shadow{
     transform: translateY(-20px);
-    color: white
+    color: black;
+}
+
+
+
+/* dark version */
+.dark-section .section-title{
+    font-size: 49px;
+    background-color: transparent;
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0%;
+    width: fit-content;
+    height: 60px;
+    letter-spacing: 4.5px;
+    transition: 1.5s;
+    opacity: 0;
+
+
+}
+.dark-section .section-title-activated{
+    z-index: 200;
+    bottom:15%;
+    opacity: 1;
+}
+
+.dark-section .section-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    width: 144px;
+    height: 40px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    bottom: 0%;
+    border: solid 1px black;
+    transition-property: background-color ,bottom;
+    transition-duration: .4s ,1.5s;
+
+    opacity: 0;
+}
+
+.dark-section .section-button-activated{
+    bottom:8%;
+    opacity: 1;
+    z-index: 2000;
+}
+
+.dark-section .section-button-small{
+    height: 28px;
+    width: 98px;
+    font-size: 14px;
+}
+
+.dark-section .section-button-label{
+    margin-top: 20px;
+    color: black;
+    transition: .3s;
+
+}
+.dark-section .section-button-shadow{
+    transition: .4s;
+    color: transparent;
+}
+
+.dark-section .section-button:hover {
+    cursor: pointer;
+    background-color: black;
+    
+}
+.dark-section .section-button:hover .section-button-label{
+    transform: translateY(-20px);
+    color: transparent;
+}
+.dark-section .section-button:hover .section-button-shadow{
+    transform: translateY(-20px);
+    color: white;
 }
