@@ -133,12 +133,12 @@
 						<circle class="big-circle" cx="13.89" cy="13.89" r="13.35"></circle>
 						<path class="icon-facebook-logo" d="M18,8.15h1.34a.5.5,0,0,0,.55-.55c0-1,0-1.93,0-2.89a.51.51,0,0,0-.57-.56H16.79A5.17,5.17,0,0,0,12,7.62a4.7,4.7,0,0,0-.16,1.21c0,1,0,2.05,0,3.08v.28H8.45a.5.5,0,0,0-.57.58c0,.95,0,1.89,0,2.84,0,.4.19.58.6.58h3.39v10.7h4.05V16.18h2.43a.49.49,0,0,0,.54-.38q.5-1.46,1-2.94a.49.49,0,0,0-.49-.68H15.92c0-.1,0-.18,0-.26,0-.79,0-1.58,0-2.37a1,1,0,0,1,.49-.93A2.85,2.85,0,0,1,18,8.15Z"></path>
 					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 31.5 28">
+					<svg class="icon-line" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 31.5 28">
 						<circle class="big-circle" cx="13.89" cy="13.89" r="13.35"></circle>
 						<circle class="ig-middle" cx="14.38" cy="13.89" r="4"></circle>
 						<circle class="ig-small" cx="19.99" cy="7.15" r="1.37"></circle>
 					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 31.5 28">
+					<svg  xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 31.5 28">
 						<g>
 						  <path class="big-circle" d="M27.25,13.89A13.36,13.36,0,1,1,13.89.54,13.36,13.36,0,0,1,27.25,13.89Z"></path>
 						  <g>
@@ -163,7 +163,7 @@
 						c0.2,0,0.3-0.1,0.3-0.4V11.1z"></path>
 				    </g>
 					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 31.5 28">
+					<svg class ="icon-bag" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 31.5 28">
 						<circle class="bag-circle" cx="13.89" cy="13.89" r="13.35"></circle>
 						<rect class="bag-1" x="8.72" y="10.38" width="10.33" height="10.17"></rect>
 						<path class="bag-2" d="M10.83,10.3a3.06,3.06,0,0,1,6.12,0"></path>
@@ -358,11 +358,12 @@
 					}
 				},
 				afterLoad:function(origin, destination, direction){
-
-					document.querySelector('#fullpage').children[destination.index].children[0].children[0].classList.add('section-title-activated');
-					document.querySelector('#fullpage').children[destination.index].children[0].children[1].classList.add('section-button-activated');
-	
-				}
+						setTimeout(function(){document.querySelector('#fullpage').children[destination.index].children[0].children[0].classList.add('section-title-activated');
+						document.querySelector('#fullpage').children[destination.index].children[0].children[1].classList.add('section-button-activated');},300)
+						
+					}
+					
+			
 				
 
 	});
