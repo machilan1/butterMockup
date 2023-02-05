@@ -126,7 +126,7 @@
 .tag-nav:hover{
     cursor: pointer;
 }
-
+/* icon area below */
 .icon-area-header {
 
     align-self: center;
@@ -148,18 +148,66 @@
 .icon-area-header :nth-child(1n):hover {
     z-index: 20;
     cursor: pointer;
-
+    fill: white;
 }
+.dark-header .icon-area-header :nth-child(1n):hover {
+
+    fill: black;
+}
+.icon-area-header :nth-child(1n):hover .icon-facebook-logo{
+
+    fill: black;
+}
+.dark-header .icon-area-header :nth-child(1):hover .icon-facebook-logo{
+
+    fill: white;
+}
+
+.icon-area-header :nth-child(3):hover .icon-line-logo{
+
+    fill: black;
+}
+.dark-header .icon-area-header :nth-child(3):hover .icon-line-logo{
+
+    fill: white;
+}
+.icon-area-header :nth-child(4):hover .icon-ask-logo{
+
+    fill: black;
+}
+.dark-header .icon-area-header :nth-child(4):hover .icon-ask-logo{
+
+    fill: white;
+}
+.icon-line:hover :nth-child(n+2){
+
+    stroke: black;
+}
+.dark-header .icon-line:hover :nth-child(n+2){
+
+    stroke: white;
+}
+
+.icon-bag:hover :nth-child(n+2){
+    stroke: black;
+ 
+}
+
+.dark-header .icon-bag:hover :nth-child(n+2){
+    stroke: white;
+ 
+}
+
 .icon-area-header svg{
     margin-left: 7.6px;
-    transition: .5s;
+    transition: .3s;
 
 }
 
 .icon-facebook-logo{
     fill:white;
     stroke-width: 0;
-    transition: .5s;
+    transition: .3s;
 }
 .dark-header .icon-facebook-logo{
     fill:black;
@@ -169,7 +217,7 @@
 .icon-line-logo{
     stroke-width: 0px;
     fill: white;    
-    transition: .5s;
+    transition: .3s;
 }
 .dark-header .icon-line-logo{
     stroke-width: 0px;
@@ -178,7 +226,7 @@
 .icon-ask-logo{
     stroke-width: 0px;
     fill: white;   
-    transition: .5s;
+    transition: .3s;
 }
 .dark-header .icon-ask-logo{
     stroke-width: 0px;
@@ -197,6 +245,9 @@
     border-radius: 20px;
     transition: .5s;
 }
+
+
+
 .dark-header .incart-number{
  background-color: black;
 }
@@ -220,7 +271,7 @@
 .hide-it{
     transform: scale(0);
 }
-
+/*  */
 .current .navbar-english{
     font-size: 15px;
     color: transparent;

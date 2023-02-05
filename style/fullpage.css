@@ -46,7 +46,7 @@
     width: fit-content;
     height: 60px;
     letter-spacing: 4.5px;
-    transition: 1.5s;
+    transition: 1s;
     opacity: 0;
 
 
@@ -71,7 +71,7 @@
     bottom: 0%;
     border: solid 1px white;
     transition-property: background-color ,bottom;
-    transition-duration: .4s ,1.5s;
+    transition-duration: .4s ,1s;
 
     opacity: 0;
 }
@@ -132,7 +132,7 @@
     width: fit-content;
     height: 60px;
     letter-spacing: 4.5px;
-    transition: 1.5s;
+    transition: 1s;
     opacity: 0;
 
 
@@ -144,20 +144,8 @@
 }
 
 .dark-section .section-button{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    overflow: hidden;
-    width: 144px;
-    height: 40px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    bottom: 0%;
-    border: solid 1px black;
-    transition-property: background-color ,bottom;
-    transition-duration: .4s ,1.5s;
+    border-color: black;
+    transition-duration: .4s ,1s;
 
     opacity: 0;
 }

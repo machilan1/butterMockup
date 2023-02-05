@@ -28,6 +28,7 @@
 .cart-area-small{
     width: 100vw;
     height: 253px;
+    z-index: 1000;
 }
 .cart-area-activated{
     right:0;
