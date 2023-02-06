@@ -1,4 +1,7 @@
 
+
+/* ! background-position & background-size can be extracted to another class */
+
 #section1{
     background :url(/asset/img/page1-1.jpg);
     background-position :center center;
@@ -31,6 +34,11 @@
     height: 100vh;
     width: 100vw;
 }
+/* ! bottom should be fixed value during animation
+* It is your element's final position
+* For fadeIn animation, you could just manipulate the translateY value
+* e.g. from -50px to 0px
+*/
 .section-title{
     font-size: 49px;
     background-color: transparent;

@@ -1,372 +1,673 @@
 <!DOCTYPE html>
 <html>
-    <head>
-		<link rel="stylesheet" type="text/css" href="/style/fullpage.css" />
-        <script src="https://kit.fontawesome.com/a13fbaac12.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Great+Vibes&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/style/style.css">
-		<link rel="stylesheet" href="/style/header.css">
-		<link rel="stylesheet" href="/style/cart.css">
-		<link rel="stylesheet" href="/style/sidebar.css">
-		<link rel="stylesheet" href="/style/footer.css">
-        <title>Butter mockup</title>
-		<script type="text/javascript" src="/node_modules/fullpage.js/dist/fullpage.js"></script>
-           
-    </head>
-    <body>
-		<div class="blinder"></div>
-        <div class="header">
-			<div class="header-content">
-				<div class="header-logo">
-					<a href="/main.html">
-						<svg width="110px" height="100px" viewBox="3 -20 100 100">
-						<g>
-							<g>
-								<path class="cls-1" d="M29.1,23.7c-1.1-6.8-4.4-10.2-9.3-10.2c-4.6,0-6.2,3-6.2,3V0H6.4v44.7c3.1,2,6.9,2.5,10.4,2.5
+  <head>
+    <link rel="stylesheet" type="text/css" href="/style/fullpage.css" />
+    <!-- ! This seems useless -->
+    <script
+      src="https://kit.fontawesome.com/a13fbaac12.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Great+Vibes&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/header.css" />
+    <link rel="stylesheet" href="/style/cart.css" />
+    <link rel="stylesheet" href="/style/sidebar.css" />
+    <link rel="stylesheet" href="/style/footer.css" />
+    <title>Butter mockup</title>
+    <!-- ! Should use CDN version for faster page load -->
+    <script
+      type="text/javascript"
+      src="/node_modules/fullpage.js/dist/fullpage.js"
+    ></script>
+  </head>
+  <body>
+    <div class="blinder"></div>
+    <div class="header">
+      <div class="header-content">
+        <div class="header-logo">
+          <!-- ! if you named the file as index.html, "/" is all you need -->
+          <a href="/main.html">
+            <!-- ! For logos & icons, you will most likely be given a seperate file in svg format -->
+            <svg width="110px" height="100px" viewBox="3 -20 100 100">
+              <g>
+                <g>
+                  <path
+                    class="cls-1"
+                    d="M29.1,23.7c-1.1-6.8-4.4-10.2-9.3-10.2c-4.6,0-6.2,3-6.2,3V0H6.4v44.7c3.1,2,6.9,2.5,10.4,2.5
 								C26.9,47.2,31,35.1,29.1,23.7z M16.9,41.4c-1.4,0-2.3,0-3.3-0.8V23.1c0-2.6,1.5-4.2,3.8-4.2c2.7,0,3.9,2,4.4,5.4
-								C22.7,29.4,22.4,41.4,16.9,41.4z"></path>
-							</g>
-							<g>
-								<path class="cls-1" d="M80.8,41.5c-2,0-2.8-0.8-2.8-3.8V19.4h5.9l0.3-5.2H78V8.1h-3.9c-1.1,3.6-2.6,6-6.1,6.7l-0.2,4.6h3v18.7
-								c0,4,0.3,9,8.4,9c1.4,0,2.6-0.1,3.7-0.4l0.3-5.7C82.4,41.3,81.6,41.5,80.8,41.5z"></path>
-							</g>
-							<g>
-								<path class="cls-1" d="M61.4,42.1c-0.4,0.1-1,0.1-1.4,0.1c-0.7,0-1-0.3-1-1.2V14.3h-7v21.6c0,4.3-2.1,5.5-4.2,5.5
+								C22.7,29.4,22.4,41.4,16.9,41.4z"
+                  ></path>
+                </g>
+                <g>
+                  <path
+                    class="cls-1"
+                    d="M80.8,41.5c-2,0-2.8-0.8-2.8-3.8V19.4h5.9l0.3-5.2H78V8.1h-3.9c-1.1,3.6-2.6,6-6.1,6.7l-0.2,4.6h3v18.7
+								c0,4,0.3,9,8.4,9c1.4,0,2.6-0.1,3.7-0.4l0.3-5.7C82.4,41.3,81.6,41.5,80.8,41.5z"
+                  ></path>
+                </g>
+                <g>
+                  <path
+                    class="cls-1"
+                    d="M61.4,42.1c-0.4,0.1-1,0.1-1.4,0.1c-0.7,0-1-0.3-1-1.2V14.3h-7v21.6c0,4.3-2.1,5.5-4.2,5.5
 								c-2.6,0-3.3-1.6-3.3-4.6V14.3h-7.1v24.3c0.2,5.4,3,8.6,8.3,8.6c3.1,0,5.7-1.3,6.9-4.1H53c0.5,3.1,2.4,4.1,4.7,4.1
-								c1.4,0,3-0.2,4-0.5l0.2-4.6C61.8,42.1,61.6,42.1,61.4,42.1z"></path>
-							</g>
-							<g>
-								<g>
-									<g>
-										<path class="cls-1" d="M91.9,41c1.9,0,2.9,1,3.1,2.5c0.3,2-0.8,3.7-3,3.7c-1.9,0-2.9-1-3.1-2.5C88.6,42.7,89.7,41,91.9,41z"></path>
-									</g>
-								</g>
-							</g>
-							<g>
-								<g>
-									<path class="cls-1" d="M95.3,64.3c0,1.6-0.3,3.1-0.8,4.6l-0.7-0.5c0.4-1.4,0.7-2.7,0.7-4.1c0-1.4-0.2-2.8-0.7-4.2l0.7-0.5
-									C95,61.1,95.3,62.7,95.3,64.3z"></path>
-								</g>
-								<g>
-									<path class="cls-1" d="M0.8,59.6l0.7,0.5c-0.4,1.4-0.7,2.7-0.7,4.2c0,1.5,0.2,2.7,0.7,4.1l-0.7,0.5c-0.6-1.5-0.8-3-0.8-4.6
-									C0,62.7,0.3,61.1,0.8,59.6z"></path>
-								</g>
-								<path class="cls-1" d="M69.9,61.1v-1.3h-0.7c-0.2,0.7-0.6,1.3-1.5,1.6l0,0.8h0.6c0.1,0,0.1,0.1,0.1,0.1v4.2c0,1.1,0.2,2,1.9,2
+								c1.4,0,3-0.2,4-0.5l0.2-4.6C61.8,42.1,61.6,42.1,61.4,42.1z"
+                  ></path>
+                </g>
+                <g>
+                  <g>
+                    <g>
+                      <path
+                        class="cls-1"
+                        d="M91.9,41c1.9,0,2.9,1,3.1,2.5c0.3,2-0.8,3.7-3,3.7c-1.9,0-2.9-1-3.1-2.5C88.6,42.7,89.7,41,91.9,41z"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      class="cls-1"
+                      d="M95.3,64.3c0,1.6-0.3,3.1-0.8,4.6l-0.7-0.5c0.4-1.4,0.7-2.7,0.7-4.1c0-1.4-0.2-2.8-0.7-4.2l0.7-0.5
+									C95,61.1,95.3,62.7,95.3,64.3z"
+                    ></path>
+                  </g>
+                  <g>
+                    <path
+                      class="cls-1"
+                      d="M0.8,59.6l0.7,0.5c-0.4,1.4-0.7,2.7-0.7,4.2c0,1.5,0.2,2.7,0.7,4.1l-0.7,0.5c-0.6-1.5-0.8-3-0.8-4.6
+									C0,62.7,0.3,61.1,0.8,59.6z"
+                    ></path>
+                  </g>
+                  <path
+                    class="cls-1"
+                    d="M69.9,61.1v-1.3h-0.7c-0.2,0.7-0.6,1.3-1.5,1.6l0,0.8h0.6c0.1,0,0.1,0.1,0.1,0.1v4.2c0,1.1,0.2,2,1.9,2
 								c0.3,0,0.5,0,0.8-0.1l0.1-1.1c-0.1,0-0.3,0.1-0.4,0.1c-0.3,0-0.5-0.1-0.6-0.2c-0.2-0.2-0.2-0.4-0.2-0.8v-4.1
-								c0-0.1,0.1-0.1,0.1-0.1h1.3l0-0.9H70C70,61.2,69.9,61.2,69.9,61.1z"></path>
-								<path class="cls-1" d="M74.9,61.1v-1.3h-0.7c-0.2,0.7-0.6,1.3-1.5,1.6l0,0.8h0.6c0.1,0,0.1,0.1,0.1,0.1v4.2c0,1.1,0.2,2,1.9,2
+								c0-0.1,0.1-0.1,0.1-0.1h1.3l0-0.9H70C70,61.2,69.9,61.2,69.9,61.1z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M74.9,61.1v-1.3h-0.7c-0.2,0.7-0.6,1.3-1.5,1.6l0,0.8h0.6c0.1,0,0.1,0.1,0.1,0.1v4.2c0,1.1,0.2,2,1.9,2
 								c0.3,0,0.5,0,0.8-0.1l0.1-1.1c-0.1,0-0.3,0.1-0.4,0.1c-0.3,0-0.5-0.1-0.6-0.2c-0.2-0.2-0.2-0.4-0.2-0.8v-4.1
-								c0-0.1,0.1-0.1,0.1-0.1h1.3l0.1-0.9h-1.4C75,61.2,74.9,61.2,74.9,61.1z"></path>
-								<path class="cls-1" d="M65.4,67.5L65.4,67.5c-0.1-0.1-0.1-0.2-0.1-0.3v-5.9h-1.5V66c0,0.5-0.1,0.9-0.4,1.1c-0.3,0.2-0.6,0.3-0.8,0.3
+								c0-0.1,0.1-0.1,0.1-0.1h1.3l0.1-0.9h-1.4C75,61.2,74.9,61.2,74.9,61.1z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M65.4,67.5L65.4,67.5c-0.1-0.1-0.1-0.2-0.1-0.3v-5.9h-1.5V66c0,0.5-0.1,0.9-0.4,1.1c-0.3,0.2-0.6,0.3-0.8,0.3
 								c-0.3,0-0.5-0.1-0.7-0.2c-0.2-0.2-0.3-0.5-0.3-1v-5h-1.5v5.4c0,1.2,0.7,1.9,1.9,1.9c0.7,0,1.3-0.3,1.6-0.9c0,0,0.1-0.1,0.1-0.1h0
-								c0.1,0,0.1,0,0.1,0.1c0.1,0.6,0.4,0.9,1,0.9c0.3,0,0.6,0,0.9-0.1l0-0.8c-0.1,0-0.2,0-0.3,0C65.6,67.6,65.5,67.6,65.4,67.5z"></path>
-								<rect x="25.8" y="57.6" class="cls-1" width="1.5" height="10.7"></rect>
-								<path class="cls-1" d="M32,61c-0.6,0-2.7,0.3-2.7,4.1c0,2.5,0.7,3.5,2.6,3.5c1.9,0,2.8-1.2,2.8-3.8C34.6,63.1,34.1,61,32,61z
-								M31.9,67.1c-1,0-1.1-1-1.1-2.4c0-1.1,0.1-2.3,1.1-2.3c0.9,0,1.1,0.9,1.1,2.6C33,66.8,32.7,67.1,31.9,67.1z"></path>
-								<path class="cls-1" d="M86.1,61.8C86,61.9,86,61.9,86.1,61.8c-0.1,0.1-0.1,0-0.1,0v-0.7h-1.3v7.2h1.5V64c0-0.3,0-0.5,0.1-0.7
-								c0.1-0.1,0.1-0.3,0.2-0.4c0.2-0.4,0.7-0.9,1.5-0.9c0.3,0,0.6,0,0.9,0.1v-1C88.5,61,88.2,61,87.9,61C87.2,61,86.6,61.3,86.1,61.8z"></path>
-								<path class="cls-1" d="M12.4,66.1c0,0.1-0.1,0.1-0.1,0.1h-0.1c0,0,0,0,0,0c0,0,0,0,0-0.1l-1-4.7H9.6l-1,4.7c0,0,0,0,0,0.1
+								c0.1,0,0.1,0,0.1,0.1c0.1,0.6,0.4,0.9,1,0.9c0.3,0,0.6,0,0.9-0.1l0-0.8c-0.1,0-0.2,0-0.3,0C65.6,67.6,65.5,67.6,65.4,67.5z"
+                  ></path>
+                  <rect
+                    x="25.8"
+                    y="57.6"
+                    class="cls-1"
+                    width="1.5"
+                    height="10.7"
+                  ></rect>
+                  <path
+                    class="cls-1"
+                    d="M32,61c-0.6,0-2.7,0.3-2.7,4.1c0,2.5,0.7,3.5,2.6,3.5c1.9,0,2.8-1.2,2.8-3.8C34.6,63.1,34.1,61,32,61z
+								M31.9,67.1c-1,0-1.1-1-1.1-2.4c0-1.1,0.1-2.3,1.1-2.3c0.9,0,1.1,0.9,1.1,2.6C33,66.8,32.7,67.1,31.9,67.1z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M86.1,61.8C86,61.9,86,61.9,86.1,61.8c-0.1,0.1-0.1,0-0.1,0v-0.7h-1.3v7.2h1.5V64c0-0.3,0-0.5,0.1-0.7
+								c0.1-0.1,0.1-0.3,0.2-0.4c0.2-0.4,0.7-0.9,1.5-0.9c0.3,0,0.6,0,0.9,0.1v-1C88.5,61,88.2,61,87.9,61C87.2,61,86.6,61.3,86.1,61.8z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M12.4,66.1c0,0.1-0.1,0.1-0.1,0.1h-0.1c0,0,0,0,0,0c0,0,0,0,0-0.1l-1-4.7H9.6l-1,4.7c0,0,0,0,0,0.1
 								c0,0,0,0,0,0H8.5c-0.1,0-0.1,0-0.1-0.1l-1-4.9H6l1.5,7.2h1.7l0.9-4.3c0-0.1,0.1-0.1,0.1-0.1h0.2c0.1,0,0.1,0,0.1,0.1l0.9,4.3h1.7
-								l1.5-7.2h-1.3L12.4,66.1z"></path>
-								<path class="cls-1" d="M17.6,65.7l0.1,0c1.1,0,1.8-0.2,2.3-0.6c0.5-0.4,0.7-1.1,0.7-1.9c0-1.4-0.7-2.2-1.9-2.2c-2,0-2.9,2.1-2.9,4.2
+								l1.5-7.2h-1.3L12.4,66.1z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M17.6,65.7l0.1,0c1.1,0,1.8-0.2,2.3-0.6c0.5-0.4,0.7-1.1,0.7-1.9c0-1.4-0.7-2.2-1.9-2.2c-2,0-2.9,2.1-2.9,4.2
 								c0,2.3,0.8,3.4,2.6,3.4c0.6,0,1.2-0.2,1.5-0.4l0.1-1.6c-0.3,0.2-0.8,0.4-1.3,0.4c-0.9,0-1.3-0.2-1.4-1.1l0-0.1
 								C17.4,65.8,17.5,65.8,17.6,65.7C17.5,65.7,17.6,65.7,17.6,65.7z M17.4,64.5L17.4,64.5L17.4,64.5c0-1.3,0.5-2.1,1.3-2.1
 								c0.2,0,0.7,0.1,0.7,0.9c0,0.4-0.1,0.7-0.4,0.9c-0.3,0.2-0.7,0.4-1.2,0.4c-0.1,0-0.1,0-0.2,0l-0.1,0C17.5,64.6,17.4,64.5,17.4,64.5
-								z"></path>
-								<path class="cls-1" d="M44.8,65.7l0.1,0c1.1,0,1.8-0.2,2.3-0.6c0.5-0.4,0.7-1.1,0.7-1.9c0-1.4-0.7-2.2-1.9-2.2c-2,0-2.9,2.1-2.9,4.2
+								z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M44.8,65.7l0.1,0c1.1,0,1.8-0.2,2.3-0.6c0.5-0.4,0.7-1.1,0.7-1.9c0-1.4-0.7-2.2-1.9-2.2c-2,0-2.9,2.1-2.9,4.2
 								c0,2.3,0.8,3.4,2.6,3.4c0.6,0,1.2-0.2,1.5-0.3l0.1-1.6c-0.4,0.3-0.9,0.4-1.3,0.4c-0.9,0-1.3-0.2-1.4-1.1l0-0.1c0,0,0-0.1,0-0.1
 								C44.7,65.7,44.8,65.7,44.8,65.7z M44.6,64.5L44.6,64.5L44.6,64.5c0-1.3,0.5-2.1,1.3-2.1c0.2,0,0.7,0.1,0.7,0.9
-								c0,0.4-0.1,0.7-0.4,0.9c-0.3,0.2-0.7,0.4-1.2,0.4c-0.1,0-0.1,0-0.2,0l-0.1,0C44.7,64.6,44.6,64.5,44.6,64.5z"></path>
-								<path class="cls-1" d="M79.5,65.7l0.1,0c1.1,0,1.8-0.2,2.3-0.6c0.5-0.4,0.7-1.1,0.7-1.9c0-1.4-0.7-2.2-1.9-2.2c-2,0-2.9,2.1-2.9,4.2
+								c0,0.4-0.1,0.7-0.4,0.9c-0.3,0.2-0.7,0.4-1.2,0.4c-0.1,0-0.1,0-0.2,0l-0.1,0C44.7,64.6,44.6,64.5,44.6,64.5z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M79.5,65.7l0.1,0c1.1,0,1.8-0.2,2.3-0.6c0.5-0.4,0.7-1.1,0.7-1.9c0-1.4-0.7-2.2-1.9-2.2c-2,0-2.9,2.1-2.9,4.2
 								c0,2.3,0.8,3.4,2.6,3.4c0.6,0,1.2-0.2,1.5-0.3l0.1-1.6c-0.4,0.3-0.9,0.4-1.3,0.4c-0.9,0-1.3-0.2-1.4-1.1l0-0.1
 								C79.4,65.8,79.4,65.8,79.5,65.7C79.4,65.7,79.5,65.7,79.5,65.7z M79.3,64.5L79.3,64.5c0-1.3,0.5-2.1,1.3-2.1
 								c0.2,0,0.7,0.1,0.7,0.9c0,0.4-0.1,0.7-0.4,0.9c-0.3,0.2-0.7,0.4-1.2,0.4c-0.1,0-0.1,0-0.2,0l-0.1,0C79.4,64.6,79.3,64.5,79.3,64.5
-								z"></path>
-								<path class="cls-1" d="M55.9,60.8c-1,0-1.4,0.7-1.4,0.7c0,0,0,0-0.1,0c0,0,0,0,0,0l0-3.8h-1.6l0,10.2c0.7,0.4,1.5,0.7,2.4,0.7
+								z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M55.9,60.8c-1,0-1.4,0.7-1.4,0.7c0,0,0,0-0.1,0c0,0,0,0,0,0l0-3.8h-1.6l0,10.2c0.7,0.4,1.5,0.7,2.4,0.7
 								c0.8,0,1.4-0.3,1.9-0.9c0.8-1,1.2-2.7,0.9-4.5C57.7,61.6,57,60.8,55.9,60.8z M55.9,67c-0.2,0.2-0.4,0.3-0.7,0.3
 								c-0.3,0-0.6,0-0.8-0.2c0,0,0,0,0,0V63c0-0.3,0.1-0.6,0.3-0.8c0.2-0.2,0.4-0.3,0.7-0.3c0.6,0,0.9,0.4,1.1,1.3
-								C56.5,64.1,56.5,66.2,55.9,67z"></path>
-								<path class="cls-1" d="M39,66l-0.1,0.3c0,0-0.1,0-0.1,0L38.7,66l-1.2-4.8h-1.5l1.6,5.6l0.4,1.5h1.9l0.4-1.5l1.6-5.6h-1.5L39,66z"></path>
-							</g>
-						</g>
-						</svg>
-					</a>
+								C56.5,64.1,56.5,66.2,55.9,67z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M39,66l-0.1,0.3c0,0-0.1,0-0.1,0L38.7,66l-1.2-4.8h-1.5l1.6,5.6l0.4,1.5h1.9l0.4-1.5l1.6-5.6h-1.5L39,66z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </a>
 
-					<div class="header-bars-icon">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</div>
-
-				<div class="header-navbar-area">		
-					<div class="navbar haha" >
-						<a class="navbar-english">shop online</a>
-						<a class="navbar-chinese">線上購買</a>
-
-					</div>
-					<div class="navbar">
-						<a class="navbar-english">but Art Present</a>
-						<a class="navbar-chinese">當代藝術禮遇計畫</a>
-						
-					</div>
-					<div class="navbar">
-						<a class="navbar-english">but style</a>
-						<a class="navbar-chinese">風格體驗</a>
-					
-					</div>
-					<div class="navbar">
-						<a class="navbar-english">we found love</a>
-						<a class="navbar-chinese">婚禮喜餅</a>
-						
-					</div>
-					<div class="navbar">
-						<a class="navbar-english">hello!baby</a>
-						<a class="navbar-chinese">彌月禮盒</a>
-
-					</div>
-				</div>
-				<div class="icon-area-header">
-					<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 31.5 28">
-						<circle class="big-circle" cx="13.89" cy="13.89" r="13.35"></circle>
-						<path class="icon-facebook-logo" d="M18,8.15h1.34a.5.5,0,0,0,.55-.55c0-1,0-1.93,0-2.89a.51.51,0,0,0-.57-.56H16.79A5.17,5.17,0,0,0,12,7.62a4.7,4.7,0,0,0-.16,1.21c0,1,0,2.05,0,3.08v.28H8.45a.5.5,0,0,0-.57.58c0,.95,0,1.89,0,2.84,0,.4.19.58.6.58h3.39v10.7h4.05V16.18h2.43a.49.49,0,0,0,.54-.38q.5-1.46,1-2.94a.49.49,0,0,0-.49-.68H15.92c0-.1,0-.18,0-.26,0-.79,0-1.58,0-2.37a1,1,0,0,1,.49-.93A2.85,2.85,0,0,1,18,8.15Z"></path>
-					</svg>
-					<svg class="icon-line" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 31.5 28">
-						<circle class="big-circle" cx="13.89" cy="13.89" r="13.35"></circle>
-						<circle class="ig-middle" cx="14.38" cy="13.89" r="4"></circle>
-						<circle class="ig-small" cx="19.99" cy="7.15" r="1.37"></circle>
-					</svg>
-					<svg  xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 31.5 28">
-						<g>
-						  <path class="big-circle" d="M27.25,13.89A13.36,13.36,0,1,1,13.89.54,13.36,13.36,0,0,1,27.25,13.89Z"></path>
-						  <g>
-							<path class="icon-line-logo" d="M13.93,13.84v2c0,.32,0,.64,0,1a.78.78,0,0,1-.8.77.76.76,0,0,1-.75-.79q0-1.79,0-3.57c0-.68,0-1.36,0-2a1,1,0,0,1,.68-.93.84.84,0,0,1,1,.48c.6,1,1.18,2.06,1.77,3.1,0,.08.09.16.19.32v-1c0-.64,0-1.28,0-1.92a1.82,1.82,0,0,1,.23-.76.63.63,0,0,1,.75-.22.73.73,0,0,1,.55.61,1.71,1.71,0,0,1,0,.39c0,1.8,0,3.59,0,5.38a.89.89,0,0,1-.56.91.91.91,0,0,1-1.1-.39c-.43-.68-.82-1.38-1.21-2.07L14,13.82Z"></path>
-							<path class="icon-line-logo" d="M20.18,11.88V13h1c.41,0,.82,0,1.23,0a.68.68,0,0,1,.68.75.68.68,0,0,1-.67.76c-.62,0-1.25,0-1.87,0h-.33v1.36H22.6a.79.79,0,0,1,.06,1.57q-1.65,0-3.3,0a.81.81,0,0,1-.86-.89q0-2.67,0-5.34a.8.8,0,0,1,.83-.88c1.08,0,2.16,0,3.24,0a.71.71,0,0,1,.72.76.72.72,0,0,1-.74.78c-.46,0-.92,0-1.38,0Z"></path>
-							<path class="icon-line-logo" d="M6.4,15.82h2a.8.8,0,0,1,.87,1,.67.67,0,0,1-.63.62c-1.07,0-2.14,0-3.21,0-.45,0-.71-.41-.72-1V11.31a1.74,1.74,0,0,1,0-.39.77.77,0,0,1,.75-.71.79.79,0,0,1,.83.68,2.32,2.32,0,0,1,.05.53Z"></path>
-							<path class="icon-line-logo" d="M11.39,13.9c0,.93,0,1.86,0,2.79a.84.84,0,0,1-.81.88.8.8,0,0,1-.8-.64,2.6,2.6,0,0,1-.06-.56v-4.9a3.18,3.18,0,0,1,.06-.62.78.78,0,0,1,.86-.63.81.81,0,0,1,.74.83c0,.65,0,1.3,0,1.95v.9Z"></path>
-						  </g>
-						</g>
-					  </svg>
-					<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 31.5 28">
-			        <path class="big-circle" d="M27.2,13.9c0,7.4-6,13.4-13.4,13.4c-7.4,0-13.4-6-13.4-13.4c0-7.4,6-13.4,13.4-13.4C21.3,0.5,27.2,6.5,27.2,13.9z"></path>
-				    <g>
-				        <path class="icon-ask-logo" d="M6.9,9.7L6,9.6V8.5h3.2l2.8,8h0l0.8,0v1.2H9.2v-1.1l0.5,0c0.3,0,0.4-0.1,0.3-0.4l-0.3-0.9H6.5l-0.4,1.2l0.8,0v1.2H3.7v-1.1
-						l0.5,0c0.2,0,0.3-0.1,0.4-0.4L6.9,9.7z M6.9,14h2.6l-1.3-4h0L6.9,14z"></path>
-				        <path class="icon-ask-logo" d="M15.5,12.9c-0.5,0-0.8,0.2-0.8,0.7c0,0.5,0.5,0.7,1.1,0.8c0.9,0.2,1.8,0.5,1.8,1.7c0,1.2-1,1.8-2.2,1.8
-						c-0.7,0-1.6-0.1-2-0.3V16l1-0.1v0.5c0,0.2,0.1,0.3,0.3,0.4c0.2,0.1,0.5,0.1,0.7,0.1c0.6,0,0.9-0.2,0.9-0.7c0-0.5-0.5-0.6-1.1-0.8
-						c-0.8-0.2-1.7-0.5-1.7-1.7c0-1.2,1-1.8,2.2-1.8c0.8,0,1.4,0.2,1.8,0.4v1.3l-1,0.1v-0.5c0-0.2-0.1-0.3-0.3-0.4
-						C16,12.9,15.8,12.9,15.5,12.9z"></path>
-				        <path class="icon-ask-logo" d="M19,11.1c0-0.2-0.1-0.3-0.3-0.3l-0.4,0V9.8h2v4.8c0.8-0.1,1.5-0.5,1.7-1.2c0.1-0.3,0-0.4-0.2-0.4l-0.4,0v-0.9h2.3V13
-						l-0.5,0c-0.1,0.8-0.4,1.3-1,1.8l1.1,2l0.7,0v0.9h-1.6L21,15.4c-0.2,0.1-0.5,0.1-0.8,0.2v1.2h0l0.6,0v0.9h-2.7v-0.8l0.4,0
-						c0.2,0,0.3-0.1,0.3-0.4V11.1z"></path>
-				    </g>
-					</svg>
-					<svg class ="icon-bag" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 31.5 28">
-						<circle class="bag-circle" cx="13.89" cy="13.89" r="13.35"></circle>
-						<rect class="bag-1" x="8.72" y="10.38" width="10.33" height="10.17"></rect>
-						<path class="bag-2" d="M10.83,10.3a3.06,3.06,0,0,1,6.12,0"></path>
-						<line class="bag-3" x1="10.89" y1="10.12" x2="10.89" y2="13.12"></line>
-						<line class="bag-3" x1="16.89" y1="10.12" x2="16.89" y2="13.12"></line>
-					
-					</svg>
-					<div class="incart-number"><span class="incart-number-text">0</span></div>
-				</div>
-			</div>
+          <!-- ! Should save this icon in seperate svg file, and then load it -->
+          <div class="header-bars-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
 
-		<div id="fullpage">
-			<div class="section" id="section1">
-				<a href="" class="section-title"></a>
-				<div class="section-button">
-					<a href="" class="section-button-label">線上購買</a>
-					<a href="" class="section-button-shadow">線上購買</a>
-				</div>
-			</div>
-			<div class="section" id="section2">
-				<a href="" class="section-title">BUTTER FLY !</a>
-				<div class="section-button">
-					<a href="" class="section-button-label">線上展覽</a>
-					<a href="" class="section-button-shadow">線上展覽</a>
-				</div>
-			</div>
-			<div class="section" id="section3">
-				<a href="" class="section-title">In butter we TRUST.</a>
-				<div class="section-button">
-					<a href="" class="section-button-label">風格體驗</a>
-					<a href="" class="section-button-shadow">風格體驗</a>
-				</div>
-			</div>
-			<div class="section" id="section4">
-				<a href="" class="section-title">We found LOVE.</a>
-				<div class="section-button">
-					<a href="" class="section-button-label">婚禮喜餅</a>
-					<a href="" class="section-button-shadow">婚禮喜餅</a>
-				</div>
-			</div>
-			<div class="section" id="section5">
-				<a href="" class="section-title">Hello!One-Month Old.</a>
-				<div class="section-button">
-					<a href="" class="section-button-label">彌月禮盒</a>
-					<a href="" class="section-button-shadow">彌月禮盒</a>
-				</div>
-			</div>
-
-		</div>
-		<div class="cart-background">
-			<div class="cart-area">
-				<div class="cart-content">
-					<div class="cart-title">Shopping Bag</div>
-					<div class="price-info-area">
-						<span class="total">Total.</span>
-						<span class="NT">NT.0</span>
-					</div>
-					<div class="cart-button-area">
-						<div id ="cart-button" class="cart-button">
-							<a href="" class="cart-button-label"><span id="label">繼續購買</span><span id="shadow">繼續購買</span></a>
-							
-						</div>
-						<div id ="cart-button" class="cart-button">
-							<a href="" class="cart-button-label"><span id="label">馬上結帳</span><span id="shadow">馬上結帳</span></a>
-
-						</div>
-					</div>
-					<div class="close-button">
-						<div class="black-stroke"></div>
-						<div class="black-stroke"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="sidebar">
-			<div class="sidebar-logo-area">
-				<svg xmlns="http://www.w3.org/2000/svg" width="127.74" viewBox="0 0 63.87 15.83">
-					<g>
-					  <path d="M7.54,7.88C7.16,5.62,6.09,4.5,4.45,4.5a2.3,2.3,0,0,0-2.07,1V0H0V14.84a6.21,6.21,0,0,0,3.46.82C6.8,15.66,8.17,11.64,7.54,7.88ZM3.47,13.73a1.54,1.54,0,0,1-1.09-.27V7.68a1.23,1.23,0,0,1,1.26-1.4c.88,0,1.28.65,1.47,1.8C5.39,9.75,5.29,13.73,3.47,13.73Z"></path>
-					  <path d="M24.67,13.77c-.66,0-.94-.27-.92-1.25V6.45h2l.09-1.71H23.75v-2H22.45c-.37,1.2-.85,2-2,2.22l-.08,1.52h1v6.21c0,1.34.11,3,2.78,3a5.28,5.28,0,0,0,1.23-.14l.1-1.9A2.29,2.29,0,0,1,24.67,13.77Z"></path>
-					  <path d="M18.26,14a4.13,4.13,0,0,1-.46,0c-.22,0-.32-.09-.32-.39V4.73H15.16v7.16c0,1.41-.71,1.84-1.39,1.84-.86,0-1.11-.53-1.08-1.52V4.73H10.35V12.8c.07,1.78,1,2.85,2.77,2.85a2.36,2.36,0,0,0,2.3-1.36h.05A1.45,1.45,0,0,0,17,15.66a5.36,5.36,0,0,0,1.34-.17L18.44,14Z"></path>
-					  <path d="M28.38,13.61a1,1,0,0,1,1,.82,1,1,0,0,1-1,1.23,1,1,0,1,1,0-2Z"></path>
-					</g>
-					<g>
-					  <path d="M63.87,14.3a4.38,4.38,0,0,1-.28,1.53l-.22-.18a4.56,4.56,0,0,0,.22-1.37,4.71,4.71,0,0,0-.22-1.38l.22-.17A4.93,4.93,0,0,1,63.87,14.3Z"></path>
-					  <path d="M32.51,12.73l.22.17a4.77,4.77,0,0,0-.22,1.38,4.57,4.57,0,0,0,.22,1.37l-.22.18a4.38,4.38,0,0,1-.28-1.53A5,5,0,0,1,32.51,12.73Z"></path>
-					  <path d="M55.44,13.24v-.43H55.2a.68.68,0,0,1-.49.51l0,.28h.2a0,0,0,0,1,0,0V15c0,.35.05.66.64.66l.26,0,0-.35-.14,0a.27.27,0,0,1-.2-.06.36.36,0,0,1-.08-.28V13.64a0,0,0,0,1,0,0h.44l0-.31h-.46A0,0,0,0,1,55.44,13.24Z"></path>
-					  <path d="M57.1,13.24v-.43h-.24a.68.68,0,0,1-.49.51v.28h.2a0,0,0,0,1,0,0V15c0,.35.05.66.64.66l.26,0,0-.35-.14,0a.27.27,0,0,1-.2-.06A.36.36,0,0,1,57.1,15V13.64a0,0,0,0,1,0,0h.45l0-.31h-.46A0,0,0,0,1,57.1,13.24Z"></path>
-					  <path d="M54,15.37h0a.14.14,0,0,1,0-.11v-2h-.48v1.57a.5.5,0,0,1-.13.38.38.38,0,0,1-.26.1.31.31,0,0,1-.22-.07.42.42,0,0,1-.09-.33V13.29h-.49v1.78a.59.59,0,0,0,.64.63.55.55,0,0,0,.53-.29,0,0,0,0,1,0,0h0a0,0,0,0,1,0,0,.31.31,0,0,0,.34.28,1.41,1.41,0,0,0,.29,0v-.28H54A.13.13,0,0,1,54,15.37Z"></path>
-					  <rect x="40.79" y="12.09" width="0.5" height="3.56"></rect>
-					  <path d="M42.86,13.2c-.21,0-.91.1-.91,1.35,0,.83.25,1.17.85,1.17s.91-.41.91-1.26C43.72,13.89,43.57,13.2,42.86,13.2Zm0,2c-.33,0-.36-.34-.36-.78s0-.76.36-.76.35.3.35.86S43.08,15.23,42.84,15.23Z"></path>
-					  <path d="M60.81,13.49s0,0,0,0h0v-.22h-.44v2.38h.5V14.21a.79.79,0,0,1,0-.24.74.74,0,0,1,.06-.13.57.57,0,0,1,.5-.31.91.91,0,0,1,.28,0v-.33a.79.79,0,0,0-.28,0A.8.8,0,0,0,60.81,13.49Z"></path>
-					  <path d="M36.35,14.89a0,0,0,0,1,0,0h0v0l-.34-1.55h-.49l-.33,1.55v0h0a0,0,0,0,1,0,0l-.33-1.62h-.45l.51,2.38h.57l.29-1.41a0,0,0,0,1,0,0h.06a0,0,0,0,1,0,0L36,15.65h.57l.51-2.38h-.45Z"></path>
-					  <path d="M38.07,14.77h0a1.06,1.06,0,0,0,.77-.21.82.82,0,0,0,.23-.63c0-.47-.22-.72-.62-.72-.66,0-1,.7-1,1.39s.28,1.13.88,1.13a1.14,1.14,0,0,0,.5-.12l0-.53a.79.79,0,0,1-.44.14c-.29,0-.44-.06-.47-.37v0a0,0,0,0,1,0,0ZM38,14.36v0h0c0-.4.18-.65.43-.65.07,0,.24,0,.24.3a.4.4,0,0,1-.12.31.6.6,0,0,1-.41.12h-.09A0,0,0,0,1,38,14.36Z"></path>
-					  <path d="M47.1,14.77h0a1.06,1.06,0,0,0,.77-.21.82.82,0,0,0,.23-.63c0-.47-.22-.72-.62-.72-.66,0-1,.7-1,1.39s.28,1.13.88,1.13a1.14,1.14,0,0,0,.5-.12l0-.53a.79.79,0,0,1-.44.14c-.29,0-.45-.06-.47-.37v0a0,0,0,0,1,0,0ZM47,14.36v0h0c0-.4.18-.65.43-.65.07,0,.25,0,.25.3a.4.4,0,0,1-.12.31.6.6,0,0,1-.41.12h-.09A0,0,0,0,1,47,14.36Z"></path>
-					  <path d="M58.62,14.77h0a1.06,1.06,0,0,0,.77-.21.82.82,0,0,0,.23-.63c0-.47-.22-.72-.62-.72-.66,0-1,.7-1,1.39s.28,1.13.88,1.13a1.13,1.13,0,0,0,.49-.12l0-.53a.79.79,0,0,1-.44.14c-.29,0-.44-.06-.47-.37v0a0,0,0,0,1,0,0Zm-.05-.41v0c0-.4.18-.65.43-.65.07,0,.24,0,.24.3a.4.4,0,0,1-.12.31.6.6,0,0,1-.41.12h-.09A0,0,0,0,1,58.57,14.36Z"></path>
-					  <path d="M50.79,13.13a.53.53,0,0,0-.47.22h0V12.09h-.52v3.38a1.48,1.48,0,0,0,.79.23.8.8,0,0,0,.64-.3,1.9,1.9,0,0,0,.29-1.49C51.4,13.39,51.17,13.13,50.79,13.13Zm0,2.07a.28.28,0,0,1-.22.11.37.37,0,0,1-.26-.07h0V13.86a.35.35,0,0,1,.09-.26.3.3,0,0,1,.22-.08c.2,0,.31.13.36.43A2,2,0,0,1,50.78,15.21Z"></path>
-					  <path d="M45.19,14.85l0,.09a0,0,0,0,1,0,0l0-.08-.41-1.58h-.51l.52,1.87.13.51h.64l.13-.51.52-1.87h-.5Z"></path>
-					</g>
-				  </svg>
-			</div>
-			<div class="sidebar-nav-area">
-				<a href="">shop online</a>
-				<a href="">but Art Present</a>
-				<a href="">but style</a>
-				<a href="">we found love</a>
-				<a href="">hello!baby</a>
-			</div>
-
-			<div class="icon-area-sidebar">
-					<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 31.5 28">
-						<circle class="big-circle" cx="13.89" cy="13.89" r="13.35"></circle>
-						<path class="icon-facebook-logo" d="M18,8.15h1.34a.5.5,0,0,0,.55-.55c0-1,0-1.93,0-2.89a.51.51,0,0,0-.57-.56H16.79A5.17,5.17,0,0,0,12,7.62a4.7,4.7,0,0,0-.16,1.21c0,1,0,2.05,0,3.08v.28H8.45a.5.5,0,0,0-.57.58c0,.95,0,1.89,0,2.84,0,.4.19.58.6.58h3.39v10.7h4.05V16.18h2.43a.49.49,0,0,0,.54-.38q.5-1.46,1-2.94a.49.49,0,0,0-.49-.68H15.92c0-.1,0-.18,0-.26,0-.79,0-1.58,0-2.37a1,1,0,0,1,.49-.93A2.85,2.85,0,0,1,18,8.15Z"></path>
-					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 31.5 28">
-						<circle class="big-circle" cx="13.89" cy="13.89" r="13.35"></circle>
-						<circle class="ig-middle" cx="14.38" cy="13.89" r="4"></circle>
-						<circle class="ig-small" cx="19.99" cy="7.15" r="1.37"></circle>
-					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 31.5 28">
-						<g>
-						  <path class="big-circle" d="M27.25,13.89A13.36,13.36,0,1,1,13.89.54,13.36,13.36,0,0,1,27.25,13.89Z"></path>
-						  <g>
-							<path class="icon-line-logo" d="M13.93,13.84v2c0,.32,0,.64,0,1a.78.78,0,0,1-.8.77.76.76,0,0,1-.75-.79q0-1.79,0-3.57c0-.68,0-1.36,0-2a1,1,0,0,1,.68-.93.84.84,0,0,1,1,.48c.6,1,1.18,2.06,1.77,3.1,0,.08.09.16.19.32v-1c0-.64,0-1.28,0-1.92a1.82,1.82,0,0,1,.23-.76.63.63,0,0,1,.75-.22.73.73,0,0,1,.55.61,1.71,1.71,0,0,1,0,.39c0,1.8,0,3.59,0,5.38a.89.89,0,0,1-.56.91.91.91,0,0,1-1.1-.39c-.43-.68-.82-1.38-1.21-2.07L14,13.82Z"></path>
-							<path class="icon-line-logo" d="M20.18,11.88V13h1c.41,0,.82,0,1.23,0a.68.68,0,0,1,.68.75.68.68,0,0,1-.67.76c-.62,0-1.25,0-1.87,0h-.33v1.36H22.6a.79.79,0,0,1,.06,1.57q-1.65,0-3.3,0a.81.81,0,0,1-.86-.89q0-2.67,0-5.34a.8.8,0,0,1,.83-.88c1.08,0,2.16,0,3.24,0a.71.71,0,0,1,.72.76.72.72,0,0,1-.74.78c-.46,0-.92,0-1.38,0Z"></path>
-							<path class="icon-line-logo" d="M6.4,15.82h2a.8.8,0,0,1,.87,1,.67.67,0,0,1-.63.62c-1.07,0-2.14,0-3.21,0-.45,0-.71-.41-.72-1V11.31a1.74,1.74,0,0,1,0-.39.77.77,0,0,1,.75-.71.79.79,0,0,1,.83.68,2.32,2.32,0,0,1,.05.53Z"></path>
-							<path class="icon-line-logo" d="M11.39,13.9c0,.93,0,1.86,0,2.79a.84.84,0,0,1-.81.88.8.8,0,0,1-.8-.64,2.6,2.6,0,0,1-.06-.56v-4.9a3.18,3.18,0,0,1,.06-.62.78.78,0,0,1,.86-.63.81.81,0,0,1,.74.83c0,.65,0,1.3,0,1.95v.9Z"></path>
-						  </g>
-						</g>
-					  </svg>
-					<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 31.5 28">
-			        <path class="big-circle" d="M27.2,13.9c0,7.4-6,13.4-13.4,13.4c-7.4,0-13.4-6-13.4-13.4c0-7.4,6-13.4,13.4-13.4C21.3,0.5,27.2,6.5,27.2,13.9z"></path>
-				    <g>
-				        <path class="icon-ask-logo" d="M6.9,9.7L6,9.6V8.5h3.2l2.8,8h0l0.8,0v1.2H9.2v-1.1l0.5,0c0.3,0,0.4-0.1,0.3-0.4l-0.3-0.9H6.5l-0.4,1.2l0.8,0v1.2H3.7v-1.1
-						l0.5,0c0.2,0,0.3-0.1,0.4-0.4L6.9,9.7z M6.9,14h2.6l-1.3-4h0L6.9,14z"></path>
-				        <path class="icon-ask-logo" d="M15.5,12.9c-0.5,0-0.8,0.2-0.8,0.7c0,0.5,0.5,0.7,1.1,0.8c0.9,0.2,1.8,0.5,1.8,1.7c0,1.2-1,1.8-2.2,1.8
+        <div class="header-navbar-area">
+          <!-- ! "haha" is useless -->
+          <div class="navbar haha">
+            <a class="navbar-english">shop online</a>
+            <a class="navbar-chinese">線上購買</a>
+          </div>
+          <div class="navbar">
+            <a class="navbar-english">but Art Present</a>
+            <a class="navbar-chinese">當代藝術禮遇計畫</a>
+          </div>
+          <div class="navbar">
+            <a class="navbar-english">but style</a>
+            <a class="navbar-chinese">風格體驗</a>
+          </div>
+          <div class="navbar">
+            <a class="navbar-english">we found love</a>
+            <a class="navbar-chinese">婚禮喜餅</a>
+          </div>
+          <div class="navbar">
+            <a class="navbar-english">hello!baby</a>
+            <a class="navbar-chinese">彌月禮盒</a>
+          </div>
+        </div>
+        <div class="icon-area-header">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32px"
+            height="32px"
+            viewBox="0 0 31.5 28"
+          >
+            <circle class="big-circle" cx="13.89" cy="13.89" r="13.35"></circle>
+            <path
+              class="icon-facebook-logo"
+              d="M18,8.15h1.34a.5.5,0,0,0,.55-.55c0-1,0-1.93,0-2.89a.51.51,0,0,0-.57-.56H16.79A5.17,5.17,0,0,0,12,7.62a4.7,4.7,0,0,0-.16,1.21c0,1,0,2.05,0,3.08v.28H8.45a.5.5,0,0,0-.57.58c0,.95,0,1.89,0,2.84,0,.4.19.58.6.58h3.39v10.7h4.05V16.18h2.43a.49.49,0,0,0,.54-.38q.5-1.46,1-2.94a.49.49,0,0,0-.49-.68H15.92c0-.1,0-.18,0-.26,0-.79,0-1.58,0-2.37a1,1,0,0,1,.49-.93A2.85,2.85,0,0,1,18,8.15Z"
+            ></path>
+          </svg>
+          <svg
+            class="icon-line"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32px"
+            height="32px"
+            viewBox="0 0 31.5 28"
+          >
+            <circle class="big-circle" cx="13.89" cy="13.89" r="13.35"></circle>
+            <circle class="ig-middle" cx="14.38" cy="13.89" r="4"></circle>
+            <circle class="ig-small" cx="19.99" cy="7.15" r="1.37"></circle>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32px"
+            height="32px"
+            viewBox="0 0 31.5 28"
+          >
+            <g>
+              <path
+                class="big-circle"
+                d="M27.25,13.89A13.36,13.36,0,1,1,13.89.54,13.36,13.36,0,0,1,27.25,13.89Z"
+              ></path>
+              <g>
+                <path
+                  class="icon-line-logo"
+                  d="M13.93,13.84v2c0,.32,0,.64,0,1a.78.78,0,0,1-.8.77.76.76,0,0,1-.75-.79q0-1.79,0-3.57c0-.68,0-1.36,0-2a1,1,0,0,1,.68-.93.84.84,0,0,1,1,.48c.6,1,1.18,2.06,1.77,3.1,0,.08.09.16.19.32v-1c0-.64,0-1.28,0-1.92a1.82,1.82,0,0,1,.23-.76.63.63,0,0,1,.75-.22.73.73,0,0,1,.55.61,1.71,1.71,0,0,1,0,.39c0,1.8,0,3.59,0,5.38a.89.89,0,0,1-.56.91.91.91,0,0,1-1.1-.39c-.43-.68-.82-1.38-1.21-2.07L14,13.82Z"
+                ></path>
+                <path
+                  class="icon-line-logo"
+                  d="M20.18,11.88V13h1c.41,0,.82,0,1.23,0a.68.68,0,0,1,.68.75.68.68,0,0,1-.67.76c-.62,0-1.25,0-1.87,0h-.33v1.36H22.6a.79.79,0,0,1,.06,1.57q-1.65,0-3.3,0a.81.81,0,0,1-.86-.89q0-2.67,0-5.34a.8.8,0,0,1,.83-.88c1.08,0,2.16,0,3.24,0a.71.71,0,0,1,.72.76.72.72,0,0,1-.74.78c-.46,0-.92,0-1.38,0Z"
+                ></path>
+                <path
+                  class="icon-line-logo"
+                  d="M6.4,15.82h2a.8.8,0,0,1,.87,1,.67.67,0,0,1-.63.62c-1.07,0-2.14,0-3.21,0-.45,0-.71-.41-.72-1V11.31a1.74,1.74,0,0,1,0-.39.77.77,0,0,1,.75-.71.79.79,0,0,1,.83.68,2.32,2.32,0,0,1,.05.53Z"
+                ></path>
+                <path
+                  class="icon-line-logo"
+                  d="M11.39,13.9c0,.93,0,1.86,0,2.79a.84.84,0,0,1-.81.88.8.8,0,0,1-.8-.64,2.6,2.6,0,0,1-.06-.56v-4.9a3.18,3.18,0,0,1,.06-.62.78.78,0,0,1,.86-.63.81.81,0,0,1,.74.83c0,.65,0,1.3,0,1.95v.9Z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32px"
+            height="32px"
+            viewBox="0 0 31.5 28"
+          >
+            <path
+              class="big-circle"
+              d="M27.2,13.9c0,7.4-6,13.4-13.4,13.4c-7.4,0-13.4-6-13.4-13.4c0-7.4,6-13.4,13.4-13.4C21.3,0.5,27.2,6.5,27.2,13.9z"
+            ></path>
+            <g>
+              <path
+                class="icon-ask-logo"
+                d="M6.9,9.7L6,9.6V8.5h3.2l2.8,8h0l0.8,0v1.2H9.2v-1.1l0.5,0c0.3,0,0.4-0.1,0.3-0.4l-0.3-0.9H6.5l-0.4,1.2l0.8,0v1.2H3.7v-1.1
+						l0.5,0c0.2,0,0.3-0.1,0.4-0.4L6.9,9.7z M6.9,14h2.6l-1.3-4h0L6.9,14z"
+              ></path>
+              <path
+                class="icon-ask-logo"
+                d="M15.5,12.9c-0.5,0-0.8,0.2-0.8,0.7c0,0.5,0.5,0.7,1.1,0.8c0.9,0.2,1.8,0.5,1.8,1.7c0,1.2-1,1.8-2.2,1.8
 						c-0.7,0-1.6-0.1-2-0.3V16l1-0.1v0.5c0,0.2,0.1,0.3,0.3,0.4c0.2,0.1,0.5,0.1,0.7,0.1c0.6,0,0.9-0.2,0.9-0.7c0-0.5-0.5-0.6-1.1-0.8
 						c-0.8-0.2-1.7-0.5-1.7-1.7c0-1.2,1-1.8,2.2-1.8c0.8,0,1.4,0.2,1.8,0.4v1.3l-1,0.1v-0.5c0-0.2-0.1-0.3-0.3-0.4
-						C16,12.9,15.8,12.9,15.5,12.9z"></path>
-				        <path class="icon-ask-logo" d="M19,11.1c0-0.2-0.1-0.3-0.3-0.3l-0.4,0V9.8h2v4.8c0.8-0.1,1.5-0.5,1.7-1.2c0.1-0.3,0-0.4-0.2-0.4l-0.4,0v-0.9h2.3V13
+						C16,12.9,15.8,12.9,15.5,12.9z"
+              ></path>
+              <path
+                class="icon-ask-logo"
+                d="M19,11.1c0-0.2-0.1-0.3-0.3-0.3l-0.4,0V9.8h2v4.8c0.8-0.1,1.5-0.5,1.7-1.2c0.1-0.3,0-0.4-0.2-0.4l-0.4,0v-0.9h2.3V13
 						l-0.5,0c-0.1,0.8-0.4,1.3-1,1.8l1.1,2l0.7,0v0.9h-1.6L21,15.4c-0.2,0.1-0.5,0.1-0.8,0.2v1.2h0l0.6,0v0.9h-2.7v-0.8l0.4,0
-						c0.2,0,0.3-0.1,0.3-0.4V11.1z"></path>
-				    </g>
-					</svg>
-					<svg class="bag-icon" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 31.5 28">
-						<circle class="bag-circle" cx="13.89" cy="13.89" r="13.35"></circle>
-						<rect class="bag-1" x="8.72" y="10.38" width="10.33" height="10.17"></rect>
-						<path class="bag-2" d="M10.83,10.3a3.06,3.06,0,0,1,6.12,0"></path>
-						<line class="bag-3" x1="10.89" y1="10.12" x2="10.89" y2="13.12"></line>
-						<line class="bag-3" x1="16.89" y1="10.12" x2="16.89" y2="13.12"></line>
-					</svg>
-					
-			</div>
-			<div class="close-button-sidebar">
-				<div class="black-stroke"></div>
-				<div class="black-stroke"></div>
-			</div>
-		</div>
+						c0.2,0,0.3-0.1,0.3-0.4V11.1z"
+              ></path>
+            </g>
+          </svg>
+          <svg
+            class="icon-bag"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32px"
+            height="32px"
+            viewBox="0 0 31.5 28"
+          >
+            <circle class="bag-circle" cx="13.89" cy="13.89" r="13.35"></circle>
+            <rect
+              class="bag-1"
+              x="8.72"
+              y="10.38"
+              width="10.33"
+              height="10.17"
+            ></rect>
+            <path class="bag-2" d="M10.83,10.3a3.06,3.06,0,0,1,6.12,0"></path>
+            <line
+              class="bag-3"
+              x1="10.89"
+              y1="10.12"
+              x2="10.89"
+              y2="13.12"
+            ></line>
+            <line
+              class="bag-3"
+              x1="16.89"
+              y1="10.12"
+              x2="16.89"
+              y2="13.12"
+            ></line>
+          </svg>
+          <div class="incart-number">
+            <span class="incart-number-text">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		
-		<script src="/script/main.js"></script>
+    <div id="fullpage">
+      <div class="section" id="section1">
+        <a href="" class="section-title"></a>
+        <div class="section-button">
+          <a href="" class="section-button-label">線上購買</a>
+          <a href="" class="section-button-shadow">線上購買</a>
+        </div>
+      </div>
+      <div class="section" id="section2">
+        <a href="" class="section-title">BUTTER FLY !</a>
+        <div class="section-button">
+          <a href="" class="section-button-label">線上展覽</a>
+          <a href="" class="section-button-shadow">線上展覽</a>
+        </div>
+      </div>
+      <div class="section" id="section3">
+        <a href="" class="section-title">In butter we TRUST.</a>
+        <div class="section-button">
+          <a href="" class="section-button-label">風格體驗</a>
+          <a href="" class="section-button-shadow">風格體驗</a>
+        </div>
+      </div>
+      <div class="section" id="section4">
+        <a href="" class="section-title">We found LOVE.</a>
+        <div class="section-button">
+          <a href="" class="section-button-label">婚禮喜餅</a>
+          <a href="" class="section-button-shadow">婚禮喜餅</a>
+        </div>
+      </div>
+      <div class="section" id="section5">
+        <a href="" class="section-title">Hello!One-Month Old.</a>
+        <div class="section-button">
+          <a href="" class="section-button-label">彌月禮盒</a>
+          <a href="" class="section-button-shadow">彌月禮盒</a>
+        </div>
+      </div>
+    </div>
+    <div class="cart-background">
+      <div class="cart-area">
+        <div class="cart-content">
+          <div class="cart-title">Shopping Bag</div>
+          <div class="price-info-area">
+            <span class="total">Total.</span>
+            <span class="NT">NT.0</span>
+          </div>
+          <div class="cart-button-area">
+            <div id="cart-button" class="cart-button">
+              <a href="" class="cart-button-label"
+                ><span id="label">繼續購買</span
+                ><span id="shadow">繼續購買</span></a
+              >
+            </div>
+            <div id="cart-button" class="cart-button">
+              <a href="" class="cart-button-label"
+                ><span id="label">馬上結帳</span
+                ><span id="shadow">馬上結帳</span></a
+              >
+            </div>
+          </div>
+          <div class="close-button">
+            <div class="black-stroke"></div>
+            <div class="black-stroke"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<script type="text/javascript" >
-			new fullpage('#fullpage', {
-				anchors:['banner1','banner2','banner3','banner4','banner5','ddddds'],
-				scrollingSpeed:1000,
-				onLeave:function(origin, destination, direction){
-					document.querySelector('#fullpage').children[destination.index].children[0].children[0].classList.remove('section-title-activated');
-					document.querySelector('#fullpage').children[destination.index].children[0].children[1].classList.remove('section-button-activated');
-	
-					console.log('fadeout');
-					for(let i=0;i<header.children[0].children[1].children.length;i++){
-						
-						if(i==destination.index){
-							header.children[0].children[1].children[i].children[0].classList.add('navbar-english-out');
-							header.children[0].children[1].children[i].children[1].classList.add('navbar-chinese-stay');
-						}else{
-							header.children[0].children[1].children[i].children[0].classList.remove('navbar-english-out');
-							header.children[0].children[1].children[i].children[1].classList.remove('navbar-chinese-stay');
-						}
-					}
+    <div class="sidebar">
+      <div class="sidebar-logo-area">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="127.74"
+          viewBox="0 0 63.87 15.83"
+        >
+          <g>
+            <path
+              d="M7.54,7.88C7.16,5.62,6.09,4.5,4.45,4.5a2.3,2.3,0,0,0-2.07,1V0H0V14.84a6.21,6.21,0,0,0,3.46.82C6.8,15.66,8.17,11.64,7.54,7.88ZM3.47,13.73a1.54,1.54,0,0,1-1.09-.27V7.68a1.23,1.23,0,0,1,1.26-1.4c.88,0,1.28.65,1.47,1.8C5.39,9.75,5.29,13.73,3.47,13.73Z"
+            ></path>
+            <path
+              d="M24.67,13.77c-.66,0-.94-.27-.92-1.25V6.45h2l.09-1.71H23.75v-2H22.45c-.37,1.2-.85,2-2,2.22l-.08,1.52h1v6.21c0,1.34.11,3,2.78,3a5.28,5.28,0,0,0,1.23-.14l.1-1.9A2.29,2.29,0,0,1,24.67,13.77Z"
+            ></path>
+            <path
+              d="M18.26,14a4.13,4.13,0,0,1-.46,0c-.22,0-.32-.09-.32-.39V4.73H15.16v7.16c0,1.41-.71,1.84-1.39,1.84-.86,0-1.11-.53-1.08-1.52V4.73H10.35V12.8c.07,1.78,1,2.85,2.77,2.85a2.36,2.36,0,0,0,2.3-1.36h.05A1.45,1.45,0,0,0,17,15.66a5.36,5.36,0,0,0,1.34-.17L18.44,14Z"
+            ></path>
+            <path
+              d="M28.38,13.61a1,1,0,0,1,1,.82,1,1,0,0,1-1,1.23,1,1,0,1,1,0-2Z"
+            ></path>
+          </g>
+          <g>
+            <path
+              d="M63.87,14.3a4.38,4.38,0,0,1-.28,1.53l-.22-.18a4.56,4.56,0,0,0,.22-1.37,4.71,4.71,0,0,0-.22-1.38l.22-.17A4.93,4.93,0,0,1,63.87,14.3Z"
+            ></path>
+            <path
+              d="M32.51,12.73l.22.17a4.77,4.77,0,0,0-.22,1.38,4.57,4.57,0,0,0,.22,1.37l-.22.18a4.38,4.38,0,0,1-.28-1.53A5,5,0,0,1,32.51,12.73Z"
+            ></path>
+            <path
+              d="M55.44,13.24v-.43H55.2a.68.68,0,0,1-.49.51l0,.28h.2a0,0,0,0,1,0,0V15c0,.35.05.66.64.66l.26,0,0-.35-.14,0a.27.27,0,0,1-.2-.06.36.36,0,0,1-.08-.28V13.64a0,0,0,0,1,0,0h.44l0-.31h-.46A0,0,0,0,1,55.44,13.24Z"
+            ></path>
+            <path
+              d="M57.1,13.24v-.43h-.24a.68.68,0,0,1-.49.51v.28h.2a0,0,0,0,1,0,0V15c0,.35.05.66.64.66l.26,0,0-.35-.14,0a.27.27,0,0,1-.2-.06A.36.36,0,0,1,57.1,15V13.64a0,0,0,0,1,0,0h.45l0-.31h-.46A0,0,0,0,1,57.1,13.24Z"
+            ></path>
+            <path
+              d="M54,15.37h0a.14.14,0,0,1,0-.11v-2h-.48v1.57a.5.5,0,0,1-.13.38.38.38,0,0,1-.26.1.31.31,0,0,1-.22-.07.42.42,0,0,1-.09-.33V13.29h-.49v1.78a.59.59,0,0,0,.64.63.55.55,0,0,0,.53-.29,0,0,0,0,1,0,0h0a0,0,0,0,1,0,0,.31.31,0,0,0,.34.28,1.41,1.41,0,0,0,.29,0v-.28H54A.13.13,0,0,1,54,15.37Z"
+            ></path>
+            <rect x="40.79" y="12.09" width="0.5" height="3.56"></rect>
+            <path
+              d="M42.86,13.2c-.21,0-.91.1-.91,1.35,0,.83.25,1.17.85,1.17s.91-.41.91-1.26C43.72,13.89,43.57,13.2,42.86,13.2Zm0,2c-.33,0-.36-.34-.36-.78s0-.76.36-.76.35.3.35.86S43.08,15.23,42.84,15.23Z"
+            ></path>
+            <path
+              d="M60.81,13.49s0,0,0,0h0v-.22h-.44v2.38h.5V14.21a.79.79,0,0,1,0-.24.74.74,0,0,1,.06-.13.57.57,0,0,1,.5-.31.91.91,0,0,1,.28,0v-.33a.79.79,0,0,0-.28,0A.8.8,0,0,0,60.81,13.49Z"
+            ></path>
+            <path
+              d="M36.35,14.89a0,0,0,0,1,0,0h0v0l-.34-1.55h-.49l-.33,1.55v0h0a0,0,0,0,1,0,0l-.33-1.62h-.45l.51,2.38h.57l.29-1.41a0,0,0,0,1,0,0h.06a0,0,0,0,1,0,0L36,15.65h.57l.51-2.38h-.45Z"
+            ></path>
+            <path
+              d="M38.07,14.77h0a1.06,1.06,0,0,0,.77-.21.82.82,0,0,0,.23-.63c0-.47-.22-.72-.62-.72-.66,0-1,.7-1,1.39s.28,1.13.88,1.13a1.14,1.14,0,0,0,.5-.12l0-.53a.79.79,0,0,1-.44.14c-.29,0-.44-.06-.47-.37v0a0,0,0,0,1,0,0ZM38,14.36v0h0c0-.4.18-.65.43-.65.07,0,.24,0,.24.3a.4.4,0,0,1-.12.31.6.6,0,0,1-.41.12h-.09A0,0,0,0,1,38,14.36Z"
+            ></path>
+            <path
+              d="M47.1,14.77h0a1.06,1.06,0,0,0,.77-.21.82.82,0,0,0,.23-.63c0-.47-.22-.72-.62-.72-.66,0-1,.7-1,1.39s.28,1.13.88,1.13a1.14,1.14,0,0,0,.5-.12l0-.53a.79.79,0,0,1-.44.14c-.29,0-.45-.06-.47-.37v0a0,0,0,0,1,0,0ZM47,14.36v0h0c0-.4.18-.65.43-.65.07,0,.25,0,.25.3a.4.4,0,0,1-.12.31.6.6,0,0,1-.41.12h-.09A0,0,0,0,1,47,14.36Z"
+            ></path>
+            <path
+              d="M58.62,14.77h0a1.06,1.06,0,0,0,.77-.21.82.82,0,0,0,.23-.63c0-.47-.22-.72-.62-.72-.66,0-1,.7-1,1.39s.28,1.13.88,1.13a1.13,1.13,0,0,0,.49-.12l0-.53a.79.79,0,0,1-.44.14c-.29,0-.44-.06-.47-.37v0a0,0,0,0,1,0,0Zm-.05-.41v0c0-.4.18-.65.43-.65.07,0,.24,0,.24.3a.4.4,0,0,1-.12.31.6.6,0,0,1-.41.12h-.09A0,0,0,0,1,58.57,14.36Z"
+            ></path>
+            <path
+              d="M50.79,13.13a.53.53,0,0,0-.47.22h0V12.09h-.52v3.38a1.48,1.48,0,0,0,.79.23.8.8,0,0,0,.64-.3,1.9,1.9,0,0,0,.29-1.49C51.4,13.39,51.17,13.13,50.79,13.13Zm0,2.07a.28.28,0,0,1-.22.11.37.37,0,0,1-.26-.07h0V13.86a.35.35,0,0,1,.09-.26.3.3,0,0,1,.22-.08c.2,0,.31.13.36.43A2,2,0,0,1,50.78,15.21Z"
+            ></path>
+            <path
+              d="M45.19,14.85l0,.09a0,0,0,0,1,0,0l0-.08-.41-1.58h-.51l.52,1.87.13.51h.64l.13-.51.52-1.87h-.5Z"
+            ></path>
+          </g>
+        </svg>
+      </div>
+      <div class="sidebar-nav-area">
+        <a href="">shop online</a>
+        <a href="">but Art Present</a>
+        <a href="">but style</a>
+        <a href="">we found love</a>
+        <a href="">hello!baby</a>
+      </div>
 
-					//change logo color
-					
-					if(document.querySelector('#fullpage').children[destination.index].classList.contains('dark-section'))
-					{
-						header.classList.add('dark-header');
-					}else{
-						header.classList.remove('dark-header');
-					}
-				},
-				afterLoad:function(origin, destination, direction){
-						setTimeout(function(){document.querySelector('#fullpage').children[destination.index].children[0].children[0].classList.add('section-title-activated');
-						document.querySelector('#fullpage').children[destination.index].children[0].children[1].classList.add('section-button-activated');},300)
-						
-					}
-					
-			
-				
+      <div class="icon-area-sidebar">
+        <!-- This should be warpped within <a> tag for better SEO -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32px"
+          height="32px"
+          viewBox="0 0 31.5 28"
+        >
+          <circle class="big-circle" cx="13.89" cy="13.89" r="13.35"></circle>
+          <path
+            class="icon-facebook-logo"
+            d="M18,8.15h1.34a.5.5,0,0,0,.55-.55c0-1,0-1.93,0-2.89a.51.51,0,0,0-.57-.56H16.79A5.17,5.17,0,0,0,12,7.62a4.7,4.7,0,0,0-.16,1.21c0,1,0,2.05,0,3.08v.28H8.45a.5.5,0,0,0-.57.58c0,.95,0,1.89,0,2.84,0,.4.19.58.6.58h3.39v10.7h4.05V16.18h2.43a.49.49,0,0,0,.54-.38q.5-1.46,1-2.94a.49.49,0,0,0-.49-.68H15.92c0-.1,0-.18,0-.26,0-.79,0-1.58,0-2.37a1,1,0,0,1,.49-.93A2.85,2.85,0,0,1,18,8.15Z"
+          ></path>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32px"
+          height="32px"
+          viewBox="0 0 31.5 28"
+        >
+          <circle class="big-circle" cx="13.89" cy="13.89" r="13.35"></circle>
+          <circle class="ig-middle" cx="14.38" cy="13.89" r="4"></circle>
+          <circle class="ig-small" cx="19.99" cy="7.15" r="1.37"></circle>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32px"
+          height="32px"
+          viewBox="0 0 31.5 28"
+        >
+          <g>
+            <path
+              class="big-circle"
+              d="M27.25,13.89A13.36,13.36,0,1,1,13.89.54,13.36,13.36,0,0,1,27.25,13.89Z"
+            ></path>
+            <g>
+              <path
+                class="icon-line-logo"
+                d="M13.93,13.84v2c0,.32,0,.64,0,1a.78.78,0,0,1-.8.77.76.76,0,0,1-.75-.79q0-1.79,0-3.57c0-.68,0-1.36,0-2a1,1,0,0,1,.68-.93.84.84,0,0,1,1,.48c.6,1,1.18,2.06,1.77,3.1,0,.08.09.16.19.32v-1c0-.64,0-1.28,0-1.92a1.82,1.82,0,0,1,.23-.76.63.63,0,0,1,.75-.22.73.73,0,0,1,.55.61,1.71,1.71,0,0,1,0,.39c0,1.8,0,3.59,0,5.38a.89.89,0,0,1-.56.91.91.91,0,0,1-1.1-.39c-.43-.68-.82-1.38-1.21-2.07L14,13.82Z"
+              ></path>
+              <path
+                class="icon-line-logo"
+                d="M20.18,11.88V13h1c.41,0,.82,0,1.23,0a.68.68,0,0,1,.68.75.68.68,0,0,1-.67.76c-.62,0-1.25,0-1.87,0h-.33v1.36H22.6a.79.79,0,0,1,.06,1.57q-1.65,0-3.3,0a.81.81,0,0,1-.86-.89q0-2.67,0-5.34a.8.8,0,0,1,.83-.88c1.08,0,2.16,0,3.24,0a.71.71,0,0,1,.72.76.72.72,0,0,1-.74.78c-.46,0-.92,0-1.38,0Z"
+              ></path>
+              <path
+                class="icon-line-logo"
+                d="M6.4,15.82h2a.8.8,0,0,1,.87,1,.67.67,0,0,1-.63.62c-1.07,0-2.14,0-3.21,0-.45,0-.71-.41-.72-1V11.31a1.74,1.74,0,0,1,0-.39.77.77,0,0,1,.75-.71.79.79,0,0,1,.83.68,2.32,2.32,0,0,1,.05.53Z"
+              ></path>
+              <path
+                class="icon-line-logo"
+                d="M11.39,13.9c0,.93,0,1.86,0,2.79a.84.84,0,0,1-.81.88.8.8,0,0,1-.8-.64,2.6,2.6,0,0,1-.06-.56v-4.9a3.18,3.18,0,0,1,.06-.62.78.78,0,0,1,.86-.63.81.81,0,0,1,.74.83c0,.65,0,1.3,0,1.95v.9Z"
+              ></path>
+            </g>
+          </g>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32px"
+          height="32px"
+          viewBox="0 0 31.5 28"
+        >
+          <path
+            class="big-circle"
+            d="M27.2,13.9c0,7.4-6,13.4-13.4,13.4c-7.4,0-13.4-6-13.4-13.4c0-7.4,6-13.4,13.4-13.4C21.3,0.5,27.2,6.5,27.2,13.9z"
+          ></path>
+          <g>
+            <path
+              class="icon-ask-logo"
+              d="M6.9,9.7L6,9.6V8.5h3.2l2.8,8h0l0.8,0v1.2H9.2v-1.1l0.5,0c0.3,0,0.4-0.1,0.3-0.4l-0.3-0.9H6.5l-0.4,1.2l0.8,0v1.2H3.7v-1.1
+						l0.5,0c0.2,0,0.3-0.1,0.4-0.4L6.9,9.7z M6.9,14h2.6l-1.3-4h0L6.9,14z"
+            ></path>
+            <path
+              class="icon-ask-logo"
+              d="M15.5,12.9c-0.5,0-0.8,0.2-0.8,0.7c0,0.5,0.5,0.7,1.1,0.8c0.9,0.2,1.8,0.5,1.8,1.7c0,1.2-1,1.8-2.2,1.8
+						c-0.7,0-1.6-0.1-2-0.3V16l1-0.1v0.5c0,0.2,0.1,0.3,0.3,0.4c0.2,0.1,0.5,0.1,0.7,0.1c0.6,0,0.9-0.2,0.9-0.7c0-0.5-0.5-0.6-1.1-0.8
+						c-0.8-0.2-1.7-0.5-1.7-1.7c0-1.2,1-1.8,2.2-1.8c0.8,0,1.4,0.2,1.8,0.4v1.3l-1,0.1v-0.5c0-0.2-0.1-0.3-0.3-0.4
+						C16,12.9,15.8,12.9,15.5,12.9z"
+            ></path>
+            <path
+              class="icon-ask-logo"
+              d="M19,11.1c0-0.2-0.1-0.3-0.3-0.3l-0.4,0V9.8h2v4.8c0.8-0.1,1.5-0.5,1.7-1.2c0.1-0.3,0-0.4-0.2-0.4l-0.4,0v-0.9h2.3V13
+						l-0.5,0c-0.1,0.8-0.4,1.3-1,1.8l1.1,2l0.7,0v0.9h-1.6L21,15.4c-0.2,0.1-0.5,0.1-0.8,0.2v1.2h0l0.6,0v0.9h-2.7v-0.8l0.4,0
+						c0.2,0,0.3-0.1,0.3-0.4V11.1z"
+            ></path>
+          </g>
+        </svg>
+        <svg
+          class="bag-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32px"
+          height="32px"
+          viewBox="0 0 31.5 28"
+        >
+          <circle class="bag-circle" cx="13.89" cy="13.89" r="13.35"></circle>
+          <rect
+            class="bag-1"
+            x="8.72"
+            y="10.38"
+            width="10.33"
+            height="10.17"
+          ></rect>
+          <path class="bag-2" d="M10.83,10.3a3.06,3.06,0,0,1,6.12,0"></path>
+          <line
+            class="bag-3"
+            x1="10.89"
+            y1="10.12"
+            x2="10.89"
+            y2="13.12"
+          ></line>
+          <line
+            class="bag-3"
+            x1="16.89"
+            y1="10.12"
+            x2="16.89"
+            y2="13.12"
+          ></line>
+        </svg>
+      </div>
+      <div class="close-button-sidebar">
+        <div class="black-stroke"></div>
+        <div class="black-stroke"></div>
+      </div>
+    </div>
 
-	});
-		</script>
-    </body>
-    </html>
+    <script src="/script/main.js"></script>
+
+    <!-- ! This should be written in another seperate js file -->
+    <script type="text/javascript">
+      new fullpage("#fullpage", {
+        anchors: [
+          "banner1",
+          "banner2",
+          "banner3",
+          "banner4",
+          "banner5",
+          "ddddds", // ! What does this do?
+        ],
+        scrollingSpeed: 1000,
+        onLeave: function (origin, destination, direction) {
+          document
+            .querySelector("#fullpage")
+            .children[
+              destination.index
+            ].children[0].children[0].classList.remove(
+              "section-title-activated"
+            );
+          document
+            .querySelector("#fullpage")
+            .children[
+              destination.index
+            ].children[0].children[1].classList.remove(
+              "section-button-activated"
+            );
+
+          // ! the "activated" class in previous activated elements should be removed
+
+          console.log("fadeout");
+          for (
+            let i = 0;
+            i < header.children[0].children[1].children.length;
+            i++
+          ) {
+            if (i == destination.index) {
+              header.children[0].children[1].children[
+                i
+              ].children[0].classList.add("navbar-english-out");
+              header.children[0].children[1].children[
+                i
+              ].children[1].classList.add("navbar-chinese-stay");
+            } else {
+              header.children[0].children[1].children[
+                i
+              ].children[0].classList.remove("navbar-english-out");
+              header.children[0].children[1].children[
+                i
+              ].children[1].classList.remove("navbar-chinese-stay");
+            }
+          }
+
+          //change logo color
+
+          if (
+            document
+              .querySelector("#fullpage")
+              .children[destination.index].classList.contains("dark-section")
+          ) {
+            header.classList.add("dark-header");
+          } else {
+            header.classList.remove("dark-header");
+          }
+        },
+        afterLoad: function (origin, destination, direction) {
+          setTimeout(function () {
+            document
+              .querySelector("#fullpage")
+              .children[
+                destination.index
+              ].children[0].children[0].classList.add(
+                "section-title-activated"
+              );
+            document
+              .querySelector("#fullpage")
+              .children[
+                destination.index
+              ].children[0].children[1].classList.add(
+                "section-button-activated"
+              );
+          }, 300);
+        },
+      });
+    </script>
+  </body>
+</html>

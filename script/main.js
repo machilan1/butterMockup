@@ -116,7 +116,7 @@ for(let i=0;i<header.children[0].children[1].children.length;i++){
 }
 
 //initialization
-
+// ! For initial page load transition, better listen to window.onload event rather than setTimeout
 ////blinder
 setTimeout(function(){
     document.querySelector('.blinder').classList.add('blinder-done')
